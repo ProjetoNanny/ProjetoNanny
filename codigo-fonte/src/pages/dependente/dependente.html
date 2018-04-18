@@ -1,0 +1,50 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>Dependente</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-item>
+    <ion-label floating>Nome</ion-label>
+    <ion-input type="text" [(ngModel)]="dependente.nome"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label floating>Data de Nascimento</ion-label>
+    <ion-input type="date" [(ngModel)]="dependente.data_nasc"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label floating>Horário</ion-label>
+    <ion-input type="text" [(ngModel)]="dependente.horario"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label floating>Tipo Sanguíneo</ion-label>
+    <ion-input type="text" [(ngModel)]="dependente.tipo_sanguineo"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label floating>Altura</ion-label>
+    <ion-input type="text" [(ngModel)]="dependente.altura"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label floating>Peso</ion-label>
+    <ion-input type="text" [(ngModel)]="dependente.peso"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label floating>Onde estuda?</ion-label>
+    <ion-input type="text" [(ngModel)]="dependente.escola"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label floating>Gênero</ion-label>
+    <ion-input type="text" [(ngModel)]="dependente.genero"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label floating>Personalidade</ion-label>
+    <ion-input type="text" [(ngModel)]="dependente.personalidade"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label floating>Hobbies</ion-label>
+    <ion-input type="text" [(ngModel)]="dependente.hobbies"></ion-input>
+  </ion-item>
+
+  <button ion-button (click)="save(dependente)">Login</button>
+</ion-content>
