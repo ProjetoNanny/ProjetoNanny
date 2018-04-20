@@ -19,6 +19,7 @@ import { PerfilUsuarioPage } from '../pages/perfil-usuario/perfil-usuario';
 import { DependentePage } from '../pages/dependente/dependente';
 import { DependenteProvider } from '../providers/dependente/dependente';
 import { UsuarioProvider } from '../providers/usuario/usuario';
+import { ListaDependentesPage } from '../pages/lista-dependentes/lista-dependentes';
 @NgModule({
   declarations: [
     MyApp,
@@ -27,6 +28,7 @@ import { UsuarioProvider } from '../providers/usuario/usuario';
     CadastroPage,
     PerfilUsuarioPage,
     DependentePage,
+    ListaDependentesPage
   ],
   imports: [
     BrowserModule,
@@ -44,7 +46,8 @@ import { UsuarioProvider } from '../providers/usuario/usuario';
     LoginPage,
     CadastroPage,
     PerfilUsuarioPage,
-    DependentePage
+    DependentePage,
+    ListaDependentesPage
   ],
   providers: [
     StatusBar,
