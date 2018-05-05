@@ -18,4 +18,8 @@ export class DependenteProvider {
     dependente.id_responsavel = this.user.uid;
     return this.dependenteList.push(dependente);
   }
+  getDependentes(){
+    return this.db.list<Dependente>('/dependentes',
+    ref => ref.orderByChild('id_responsavel').equalTo(1));
+  }
 }

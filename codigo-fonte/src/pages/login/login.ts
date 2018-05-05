@@ -4,6 +4,7 @@ import { User } from '../../models/user';
 import { AngularFireAuth } from 'angularfire2/auth';
 import { HomePage } from '../home/home';
 import { CadastroPage } from '../cadastro/cadastro';
+import { ToastController } from 'ionic-angular';
 @IonicPage()
 @Component({
   selector: 'page-login',
@@ -12,6 +13,7 @@ import { CadastroPage } from '../cadastro/cadastro';
 export class LoginPage {
   user = {} as User;
   constructor(
+    private toastCtrl: ToastController,
     private afAuth: AngularFireAuth,
     public navCtrl: NavController,
     public navParams: NavParams) {
@@ -21,12 +23,18 @@ export class LoginPage {
   async login(user: User) {
     try {
       const result = await this.afAuth.auth.signInWithEmailAndPassword(user.email, user.password);
+      console.log(result);
       if (result) {
          this.navCtrl.setRoot(HomePage);
       }
     }
     catch (e) {
-      console.error(e);
+      let toast = this.toastCtrl.create({
+        message: "Não foi possível realizar o login",
+        duration: 3000
+      });
+      toast.present();
+      console.error(e.message);
     }
   }
 

@@ -1,12 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-
-/**
- * Generated class for the ListaDependentesPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
+import { DependenteProvider } from '../../providers/dependente/dependente';
+import { Dependente } from '../../models/dependente';
+import * as firebase from 'firebase/app';
 
 @IonicPage()
 @Component({
@@ -14,12 +10,16 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'lista-dependentes.html',
 })
 export class ListaDependentesPage {
-
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  user = firebase.auth().currentUser;
+  private dependenteList = this.dependenteProvider.getDependentes();
+  constructor(
+    private dependenteProvider: DependenteProvider,
+    public navCtrl: NavController,
+    public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad ListaDependentesPage');
+
   }
 
 }

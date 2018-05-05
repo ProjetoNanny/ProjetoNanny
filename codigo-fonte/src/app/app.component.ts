@@ -5,12 +5,11 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { LoginPage } from '../pages/login/login';
 import { HomePage } from '../pages/home/home';
 import { AngularFireAuth } from 'angularfire2/auth';
-import { ListaDependentesPage } from '../pages/lista-dependentes/lista-dependentes';
 @Component({
   templateUrl: 'app.html'
 })
 export class MyApp {
-  rootPage:any = ListaDependentesPage;
+  rootPage:any = LoginPage;
   constructor(
     platform: Platform,
     statusBar: StatusBar,

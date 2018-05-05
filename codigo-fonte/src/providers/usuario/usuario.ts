@@ -16,8 +16,8 @@ export class UsuarioProvider {
     public firebaseApp: FirebaseApp,
     public http: Http) {}
   salvar(usuario: Usuario){
-    usuario.id_responsavel = this.user.uid;
-    return this.usuarioList.push(usuario);
+    return this.db.object('/usuario/'+usuario.uid)
+    .set(usuario);
   }
   sair(){
     firebase.auth().signOut();

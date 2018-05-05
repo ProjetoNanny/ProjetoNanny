@@ -1,11 +1,11 @@
 export const environment = {
   production: false,
   firebase: {
-    apiKey: "AIzaSyAQZm56kJWPm8hPvkvHPutknLQb4XhF-Y4",
-    authDomain: "nanny-4f389.firebaseapp.com",
-    databaseURL: "https://nanny-4f389.firebaseio.com",
-    projectId: "nanny-4f389",
-    storageBucket: "nanny-4f389.appspot.com",
-    messagingSenderId: "45859305771"
+    apiKey: "AIzaSyCQwYTAyZ1kj4z_KMpZXc7eZFyjXg3Hgyo",
+    authDomain: "projeto-nanny.firebaseapp.com",
+    databaseURL: "https://projeto-nanny.firebaseio.com",
+    projectId: "projeto-nanny",
+    storageBucket: "projeto-nanny.appspot.com",
+    messagingSenderId: "179161098147"
   }
 };

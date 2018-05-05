@@ -14,6 +14,12 @@
     <ion-label floating>Password</ion-label>
     <ion-input type="password" [(ngModel)]="user.password"></ion-input>
   </ion-item>
+  <ion-item>
+    <ion-label floating>Password</ion-label>
+    <button ion-button color="secondary" type="button" full round large (click)="selectPhoto()">
+      <ion-icon name="md-image"></ion-icon>
+    </button>
+  </ion-item>
 
   <button ion-button color="light" (click)="register(user)">Register</button>
 </ion-content>

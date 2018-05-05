@@ -5,6 +5,23 @@
 </ion-header>
 <ion-content padding>
   <ion-item>
+    <ion-row>
+      <ion-col width-50>
+        <button ion-button color="danger" type="button" full round large (click)="takePhoto()">
+                    <ion-icon name="md-camera"></ion-icon>
+                </button>
+      </ion-col>
+      <ion-col width-50>
+        <button ion-button color="secondary" type="button" full round large (click)="selectPhoto()">
+                    <ion-icon name="md-image"></ion-icon>
+                </button>
+      </ion-col>
+    </ion-row>
+  </ion-item>
+  <ion-item>
+    <img class="img-responsive" src="{{ myPhotoURL }}" />
+  </ion-item>
+  <ion-item>
     <ion-label floating>Nome</ion-label>
     <ion-input type="text" [(ngModel)]="usuario.nome"></ion-input>
   </ion-item>
@@ -20,5 +37,5 @@
     <ion-label floating>Cidade</ion-label>
     <ion-input type="text" [(ngModel)]="usuario.cidade"></ion-input>
   </ion-item>
-  <button ion-button (click)="save(usuario)">Login</button>
+  <button ion-button (click)="save(usuario)">Salvar</button>
 </ion-content>

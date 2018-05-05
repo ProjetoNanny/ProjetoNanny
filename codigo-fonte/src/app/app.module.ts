@@ -7,10 +7,12 @@ import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
 
-import { environment } from '../environments/environment';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule, AngularFireDatabase } from 'angularfire2/database';
 import { AngularFireAuthModule } from 'angularfire2/auth';
+
+import { environment } from '../environments/environment';
+
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { LoginPage } from '../pages/login/login';
@@ -20,6 +22,7 @@ import { DependentePage } from '../pages/dependente/dependente';
 import { DependenteProvider } from '../providers/dependente/dependente';
 import { UsuarioProvider } from '../providers/usuario/usuario';
 import { ListaDependentesPage } from '../pages/lista-dependentes/lista-dependentes';
+import { AuthProvider } from '../providers/auth/auth';
 @NgModule({
   declarations: [
     MyApp,
@@ -54,7 +57,8 @@ import { ListaDependentesPage } from '../pages/lista-dependentes/lista-dependent
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     DependenteProvider,
-    UsuarioProvider
+    UsuarioProvider,
+    AuthProvider
   ]
 })
 export class AppModule {}
