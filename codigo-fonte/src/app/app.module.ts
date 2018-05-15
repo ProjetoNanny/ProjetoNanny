@@ -19,10 +19,15 @@ import { LoginPage } from '../pages/login/login';
 import { CadastroPage } from '../pages/cadastro/cadastro';
 import { PerfilUsuarioPage } from '../pages/perfil-usuario/perfil-usuario';
 import { DependentePage } from '../pages/cadastro-dependente/dependente';
+import { LembretesPage } from '../pages/lembretes/lembretes';
+import { ListaDependentesPage } from '../pages/lista-dependentes/lista-dependentes';
+import { CadastroLembretesPage } from '../pages/cadastro-lembretes/cadastro-lembretes';
 import { DependenteProvider } from '../providers/dependente/dependente';
 import { UsuarioProvider } from '../providers/usuario/usuario';
-import { ListaDependentesPage } from '../pages/lista-dependentes/lista-dependentes';
+import { LembretesProvider } from '../providers/lembretes/lembretes';
+import { CadastroLembretesProvider } from '../providers/cadastro-lembretes/cadastro-lembretes';
 import { AuthProvider } from '../providers/auth/auth';
+
 @NgModule({
   declarations: [
     MyApp,
@@ -31,7 +36,9 @@ import { AuthProvider } from '../providers/auth/auth';
     CadastroPage,
     PerfilUsuarioPage,
     DependentePage,
-    ListaDependentesPage
+    ListaDependentesPage,
+    LembretesPage,
+    CadastroLembretesPage
   ],
   imports: [
     BrowserModule,
@@ -50,7 +57,9 @@ import { AuthProvider } from '../providers/auth/auth';
     CadastroPage,
     PerfilUsuarioPage,
     DependentePage,
-    ListaDependentesPage
+    ListaDependentesPage,
+    LembretesPage,
+    CadastroLembretesPage
   ],
   providers: [
     StatusBar,
@@ -58,7 +67,9 @@ import { AuthProvider } from '../providers/auth/auth';
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     DependenteProvider,
     UsuarioProvider,
-    AuthProvider
+    LembretesProvider,
+    AuthProvider,
+    CadastroLembretesProvider
   ]
 })
 export class AppModule {}
