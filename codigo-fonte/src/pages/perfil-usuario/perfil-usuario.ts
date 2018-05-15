@@ -16,45 +16,16 @@ export class PerfilUsuarioPage {
   public myPhoto: any;
   public myPhotoURL: any;
 
-  usuario = {} as Usuario;
+  public usuario = {} as Usuario;
   constructor(
     private usuarioProvider: UsuarioProvider,
     public navCtrl: NavController,
     public navParams: NavParams,
     public authProvider: AuthProvider) {
       this.myPhotosRef = firebase.storage().ref('/usuario/'+firebase.auth().currentUser.uid);
-      this.myPhotoURL = this.getCurrentUserPhoto();
+      console.log( usuarioProvider.getUsuario());
+      var ref = firebase.database().ref('/usuario/').child(firebase.auth().currentUser.uid);
     }
-    getCurrentUserPhoto(){
-      var  myImageRef = this.myPhotosRef.child('myPhoto.png');
-      myImageRef.getDownloadURL().then(function(url) {
-        console.log(url);
-        // Insert url into an <img> tag to "download"
-      }).catch(function(error) {
-
-      // A full list of error codes is available at
-      // https://firebase.google.com/docs/storage/web/handle-errors
-      switch (error.code) {
-      case 'storage/object_not_found':
-      // File doesn't exist
-      break;
-
-      case 'storage/unauthorized':
-      // User doesn't have permission to access the object
-      break;
-
-      case 'storage/canceled':
-      // User canceled the upload
-      break;
-
-      case 'storage/unknown':
-      // Unknown error occurred, inspect the server response
-      break;
-    }
-  });
-  return myImageRef;
-  // return firebase.storage().refFromURL(myImageRef);
-}
 takePhoto() {
   Camera.getPicture({
     quality: 100,

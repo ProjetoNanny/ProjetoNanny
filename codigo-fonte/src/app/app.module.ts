@@ -18,7 +18,7 @@ import { HomePage } from '../pages/home/home';
 import { LoginPage } from '../pages/login/login';
 import { CadastroPage } from '../pages/cadastro/cadastro';
 import { PerfilUsuarioPage } from '../pages/perfil-usuario/perfil-usuario';
-import { DependentePage } from '../pages/dependente/dependente';
+import { DependentePage } from '../pages/cadastro-dependente/dependente';
 import { DependenteProvider } from '../providers/dependente/dependente';
 import { UsuarioProvider } from '../providers/usuario/usuario';
 import { ListaDependentesPage } from '../pages/lista-dependentes/lista-dependentes';

@@ -19,7 +19,7 @@
     </ion-row>
   </ion-item>
   <ion-item>
-    <img class="img-responsive" src="{{ myPhotoURL }}" />
+    <img class="img-responsive" src="{{ usuario.foto_perfil }}" />
   </ion-item>
   <ion-item>
     <ion-label floating>Nome</ion-label>
@@ -27,7 +27,7 @@
   </ion-item>
   <ion-item>
     <ion-label floating>Data de Nascimento</ion-label>
-    <ion-input type="date" [(ngModel)]="usuario.data_nasc"></ion-input>
+    <ion-input type="date" [(ngModel)]="usuario.data_nasc" placeholder=""></ion-input>
   </ion-item>
   <ion-item>
     <ion-label floating>País</ion-label>
