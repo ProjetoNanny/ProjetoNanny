@@ -23,7 +23,7 @@ export class PerfilUsuarioPage {
     public navParams: NavParams,
     public authProvider: AuthProvider) {
       this.myPhotosRef = firebase.storage().ref('/usuario/'+firebase.auth().currentUser.uid);
-      console.log( usuarioProvider.getUsuario());
+      //console.log( usuarioProvider.getUsuario());
       var ref = firebase.database().ref('/usuario/').child(firebase.auth().currentUser.uid);
     }
 takePhoto() {
