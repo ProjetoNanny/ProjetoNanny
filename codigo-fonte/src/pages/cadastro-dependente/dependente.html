@@ -7,7 +7,7 @@
 <ion-content padding>
   <ion-item>
     <ion-label floating>Nome</ion-label>
-    <ion-input type="text" [(ngModel)]="dependente.nome"></ion-input>
+    <ion-input type="text" [(ngModel)]="dependente.nome" required></ion-input>
   </ion-item>
   <ion-item>
     <ion-label floating>Data de Nascimento</ion-label>
@@ -45,6 +45,7 @@
     <ion-label floating>Hobbies</ion-label>
     <ion-input type="text" [(ngModel)]="dependente.hobbies"></ion-input>
   </ion-item>
+  <button class="button button-positive button-block" type="submit" ng-disabled="contato.$invalid">Salvar</button>
 
-  <button ion-button (click)="save(dependente)">Login</button>
+  <button ion-button (click)="save(dependente)">Cadastrar</button>
 </ion-content>
