@@ -14,6 +14,8 @@ export class DependenteProvider {
   public myPhotoURL: any;
   user = firebase.auth().currentUser;
   private dependenteList = this.db.list<Dependente>('/dependentes');
+  private PATH = "dependentes/";
+  // dependentes: AngularFireList<Dependente[]>;
   constructor(
     public db: AngularFireDatabase,
     public firebaseApp: FirebaseApp,
@@ -83,4 +85,12 @@ export class DependenteProvider {
       this.myPhotoURL = savedPicture.downloadURL;
     });
   }
+  getAll() {
+  return this.db.list(this.PATH, ref => ref.orderByChild("id_responsavel")
+    .equalTo(firebase.auth().currentUser.uid))
+    .snapshotChanges()
+    .map(changes => {
+      return changes.map(c => ({ key: c.payload.key, ...c.payload.val() }));
+    })
+}
 }

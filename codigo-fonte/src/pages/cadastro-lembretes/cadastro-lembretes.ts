@@ -2,7 +2,9 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { Lembretes } from '../../models/lembretes';
 import { LembretesProvider } from '../../providers/lembretes/lembretes';
+import { DependenteProvider } from '../../providers/dependente/dependente';
 import { FormBuilder,FormGroup,Validators,FormControl } from "@angular/forms";
+import { Observable } from 'rxjs/Observable';
 
 @IonicPage()
 @Component({
@@ -10,12 +12,28 @@ import { FormBuilder,FormGroup,Validators,FormControl } from "@angular/forms";
   templateUrl: 'cadastro-lembretes.html',
 })
 export class CadastroLembretesPage {
+    form: FormGroup;
+    lembretes = {} as Lembretes;
+    dependentes: Observable<any>;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(private lembretesProvider: LembretesProvider,
+    public navCtrl: NavController, public navParams: NavParams,
+    public dependenteProvider: DependenteProvider) {
+      this.dependentes=dependenteProvider.getAll();
+      console.log(this.dependentes);
   }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad CadastroLembretesPage');
+  save (lembretes: Lembretes){
+
+    let resposta = this.lembretesProvider.salvar(lembretes);
+    if(resposta)
+      this.navCtrl.popToRoot();
   }
+
+
+
+  //ionViewDidLoad() {
+    //console.log('ionViewDidLoad CadastroLembretesPage');
+  //}
 
 }
