@@ -3,6 +3,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { Dependente } from '../../models/dependente';
 import { AngularFireDatabase } from 'angularfire2/database';
 import { Observable } from 'rxjs/Observable';
+import { PaginaDependentePage } from '../pagina-dependente/pagina-dependente';
 import firebase from 'firebase';
 /**
  * Generated class for the ListaDependentesPage page.
@@ -31,5 +32,12 @@ export class ListaDependentesPage {
     .map(changes => {
       return changes.map(c => ({ key: c.payload.key, ...c.payload.val() }));
     })
-}
+  }
+  selecionarDependente(dependente: any) {
+    console.log(dependente);
+    this.navCtrl.push("PaginaDependentePage", { dependente: dependente });
+  }
+  adicionarDependente() {
+    this.navCtrl.push("DependentePage");
+  }
 }

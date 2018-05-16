@@ -18,7 +18,6 @@ import { HomePage } from '../pages/home/home';
 import { LoginPage } from '../pages/login/login';
 import { CadastroPage } from '../pages/cadastro/cadastro';
 import { PerfilUsuarioPage } from '../pages/perfil-usuario/perfil-usuario';
-import { DependentePage } from '../pages/cadastro-dependente/dependente';
 import { LembretesPage } from '../pages/lembretes/lembretes';
 import { ListaDependentesPage } from '../pages/lista-dependentes/lista-dependentes';
 import { CadastroLembretesPage } from '../pages/cadastro-lembretes/cadastro-lembretes';
@@ -35,7 +34,6 @@ import { AuthProvider } from '../providers/auth/auth';
     LoginPage,
     CadastroPage,
     PerfilUsuarioPage,
-    DependentePage,
     ListaDependentesPage,
     LembretesPage,
     CadastroLembretesPage
@@ -56,7 +54,6 @@ import { AuthProvider } from '../providers/auth/auth';
     LoginPage,
     CadastroPage,
     PerfilUsuarioPage,
-    DependentePage,
     ListaDependentesPage,
     LembretesPage,
     CadastroLembretesPage

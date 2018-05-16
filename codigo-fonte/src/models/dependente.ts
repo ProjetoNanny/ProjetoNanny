@@ -1,4 +1,5 @@
 export class Dependente {
+    key: string;
     id_responsavel: string;
     nome: string;
     data_nasc: Date = new Date();
@@ -10,4 +11,5 @@ export class Dependente {
     genero: string;
     personalidade: string;
     hobbies:string[];
+    foto_perfil: string;
 }
