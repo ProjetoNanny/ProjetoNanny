@@ -24,14 +24,11 @@ export class CadastroLembretesPage {
   }
 
   save (lembretes: Lembretes){
-
+    console.log('lembretes:' + lembretes);
     let resposta = this.lembretesProvider.salvar(lembretes);
     if(resposta)
       this.navCtrl.popToRoot();
   }
-
-
-
   //ionViewDidLoad() {
     //console.log('ionViewDidLoad CadastroLembretesPage');
   //}

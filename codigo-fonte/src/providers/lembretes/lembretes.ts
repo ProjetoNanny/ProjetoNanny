@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-
+import { ToastController } from 'ionic-angular';
 import { FirebaseApp } from "angularfire2";
 import { AngularFireDatabase } from "angularfire2/database";
 import { Lembretes } from '../../models/lembretes';
@@ -13,12 +13,26 @@ export class LembretesProvider {
   constructor(
     public db: AngularFireDatabase,
     public firebaseApp: FirebaseApp,
-    public http: HttpClient) {}
+    public http: HttpClient,
+    public toastCtrl: ToastController
+    ) {}
     salvar(lembretes: Lembretes){
-      return this.lembretesList.push(lembretes);
+      //lembretes.id_dependente = ;
+      console.log(lembretes);
+      return this.lembretesList.push(lembretes)
+      .then(resolve => {
+        let toast = this.toastCtrl.create({
+          message: "Cadastro realizado com sucesso.",
+          duration: 3000
+        });
+        toast.present();
+        console.log("success");
+      });
     }
+
     getLembretes(){
       return this.db.list<Lembretes>('/lembretes',
         ref => ref.orderByChild('id_lembrete').equalTo(1));
     }
+
   }

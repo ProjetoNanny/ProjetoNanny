@@ -9,9 +9,8 @@
     <ion-label floating>Dependente</ion-label>
     <ion-select [(ngModel)]="lembretes.id_dependete"  >
       <ion-option *ngFor="let dependente of dependentes | async">
-          <ion-option value="{{dependente.id}}">{{dependente.nome}}</ion-option>
-
-          </ion-option>
+          <ion-option value="{{dependente.key}}">{{dependente.key}}</ion-option>
+      </ion-option>
     </ion-select>
   </ion-item>
   <ion-item>
@@ -19,16 +18,19 @@
     <ion-input type="text" [(ngModel)]="lembretes.titulo" required></ion-input>
   </ion-item>
   <ion-item>
-    <ion-label floating>Data Início</ion-label>
-    <ion-input type="date" [(ngModel)]="lembretes.data_inicial"></ion-input>
+    <ion-label stacked>Data Início</ion-label>
+    <ion-input type="date" displayFormat="mm/dd/yyyy" pickerFormat="MMMM YYYY" [(ngModel)]="lembretes.data_inicial"></ion-input>
   </ion-item>
   <ion-item>
-    <ion-label floating>Data Final</ion-label>
-    <ion-input type="text" [(ngModel)]="lembretes.data_final"></ion-input>
+    <ion-label stacked>Data Final</ion-label>
+    <ion-input type="date" [(ngModel)]="lembretes.data_final"></ion-input>
   </ion-item>
   <ion-item>
     <ion-label floating>Repetir todo dia?</ion-label>
-    <ion-input type="text" [(ngModel)]="lembretes.repeticao"></ion-input>
+    <ion-select [(ngModel)]="lembretes.repeticao"  >
+      <ion-option value="Sim">Sim</ion-option>
+      <ion-option value="Não">Não</ion-option>
+    </ion-select>
   </ion-item>
   <ion-item>
     <ion-label floating>Localização</ion-label>
