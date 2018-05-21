@@ -22,6 +22,7 @@ export class PaginaDependentePage {
     public navParams: NavParams,
     public dependenteProvider: DependenteProvider) {
       this.dependente = this.navParams.data.dependente || { };
+      console.log(this.dependente);
       // this.dependenteProvider.getFoto(this.dependente.key).then(url=>{
       //   console.log(url);
       //     this.dependente.foto_perfil = url;
@@ -34,8 +35,8 @@ export class PaginaDependentePage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad PaginaDependentePage');
   }
-  editarDependente(dependente: any) {
-    console.log("editar:"+dependente);
-    this.navCtrl.push('DependentePage', { dependente: dependente });
+  editarDependente() {
+    console.log(this.dependente);
+    this.navCtrl.push('DependentePage', { dependente: this.dependente });
   }
 }

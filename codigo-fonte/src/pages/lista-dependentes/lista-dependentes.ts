@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { Dependente } from '../../models/dependente';
+import { DependenteProvider } from '../../providers/dependente/dependente';
 import { AngularFireDatabase } from 'angularfire2/database';
 import { Observable } from 'rxjs/Observable';
 import { PaginaDependentePage } from '../pagina-dependente/pagina-dependente';
@@ -22,16 +23,9 @@ export class ListaDependentesPage {
   dependentes: Observable<any>;
   constructor(public navCtrl: NavController,
     public navParams: NavParams,
-    private db: AngularFireDatabase) {
-      this.dependentes = this.getAll();
-  }
-  getAll() {
-  return this.db.list(this.PATH, ref => ref.orderByChild("id_responsavel")
-    .equalTo(firebase.auth().currentUser.uid))
-    .snapshotChanges()
-    .map(changes => {
-      return changes.map(c => ({ key: c.payload.key, ...c.payload.val() }));
-    })
+    private db: AngularFireDatabase,
+    private dependenteProvader: DependenteProvider) {
+      this.dependentes = this.dependenteProvader.getAll();
   }
   selecionarDependente(dependente: any) {
     console.log(dependente);

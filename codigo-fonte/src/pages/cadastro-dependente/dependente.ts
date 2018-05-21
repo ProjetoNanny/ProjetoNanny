@@ -19,7 +19,6 @@ export class DependentePage {
   }
 
   save (dependente: Dependente){
-
     let resposta = this.dependenteProvider.salvar(dependente);
     if(resposta)
         this.navCtrl.popToRoot();

@@ -18,7 +18,7 @@
     <img src="https://ih1.redbubble.net/image.445781365.8284/flat,800x800,075,f.u2.jpg" (click)="editarDependente(dependente)"/>
   </div>
   <div *ngIf="dependente.foto_perfil != null">
-    <img src="{{dependente.foto_perfil}}" (click)="editarDependente(dependente)"/>
+    <img src="{{dependente.foto_perfil}}" (click)="editarDependente()"/>
   </div>
     <h1 >{{ dependente.nome }}</h1>
 </ion-content>
