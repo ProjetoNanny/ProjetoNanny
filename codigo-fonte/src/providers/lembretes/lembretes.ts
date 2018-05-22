@@ -18,6 +18,7 @@ export class LembretesProvider {
     ) {}
     salvar(lembretes: Lembretes){
       //lembretes.id_dependente = ;
+      lembretes.id_usuario = firebase.auth().currentUser.uid;
       console.log(lembretes);
       return this.lembretesList.push(lembretes)
       .then(resolve => {

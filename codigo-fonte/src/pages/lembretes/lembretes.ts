@@ -20,12 +20,22 @@ export class LembretesPage {
     private db: AngularFireDatabase) {
       this.lembretes = this.getAll();
   }
+
   getAll(){
-    return this.db.list(this.PATH, ref => ref.orderByChild("id_dependente")
+    return this.db.list(this.PATH, ref => ref.orderByChild("id_usuario")
       .equalTo(firebase.auth().currentUser.uid))
       .snapshotChanges()
       .map(changes => {
         return changes.map(c => ({ key: c.payload.key, ...c.payload.val()}));
       })
   }
+
+  edit(){
+    
+  }
+
+  remove(){
+
+  }
+
 }
