@@ -19,7 +19,6 @@ import { LoginPage } from '../pages/login/login';
 import { CadastroPage } from '../pages/cadastro/cadastro';
 import { PerfilUsuarioPage } from '../pages/perfil-usuario/perfil-usuario';
 import { LembretesPage } from '../pages/lembretes/lembretes';
-import { LembretesEditPage } from '../pages/lembretes-edit/lembretes-edit';
 import { ListaDependentesPage } from '../pages/lista-dependentes/lista-dependentes';
 import { CadastroLembretesPage } from '../pages/cadastro-lembretes/cadastro-lembretes';
 import { DependenteProvider } from '../providers/dependente/dependente';
@@ -37,8 +36,7 @@ import { AuthProvider } from '../providers/auth/auth';
     PerfilUsuarioPage,
     ListaDependentesPage,
     LembretesPage,
-    CadastroLembretesPage,
-    LembretesEditPage
+    CadastroLembretesPage
   ],
   imports: [
     BrowserModule,
@@ -60,8 +58,7 @@ import { AuthProvider } from '../providers/auth/auth';
     PerfilUsuarioPage,
     ListaDependentesPage,
     LembretesPage,
-    CadastroLembretesPage,
-    LembretesEditPage
+    CadastroLembretesPage
   ],
   providers: [
     StatusBar,

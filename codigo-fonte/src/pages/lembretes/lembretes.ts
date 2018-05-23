@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { ToastController } from 'ionic-angular';
 import { Lembretes } from '../../models/lembretes';
 import { LembretesProvider } from '../../providers/lembretes/lembretes';
 import { FormBuilder,FormGroup,Validators,FormControl } from "@angular/forms";
@@ -17,7 +18,10 @@ export class LembretesPage {
   lembretes: Observable<any>;
   constructor(public navCtrl: NavController,
     public navParams: NavParams,
-    private db: AngularFireDatabase) {
+    private db: AngularFireDatabase,
+    private lembretesProvider: LembretesProvider,
+    public toastCtrl: ToastController
+  ) {
       this.lembretes = this.getAll();
   }
 
@@ -31,11 +35,29 @@ export class LembretesPage {
   }
 
   edit(){
-    
-  }
-
-  remove(){
 
   }
 
-}
+  remove(lembretes: Lembretes) {
+      return this.db.list(this.PATH).remove(lembretes.key)
+      .then(resolve => {
+        let toast = this.toastCtrl.create({
+          message: "Lembrete removido com sucesso.",
+          duration: 3000
+        });
+        toast.present();
+        console.log("success");
+      });
+    }
+    //console.log("id lembrete:" + lembretes.key);
+    //return this.db.list(this.PATH).remove(lembretes.key);
+    // if (lembretes.key) {
+    //  this.lembretesProvider.remove(lembretes)
+    //     .then(() => {
+    //       this.toast.create({ message: 'Lembrete removido sucesso.', duration: 3000 }).present();
+    //     })
+    //     .catch(() => {
+    //       this.toast.create({ message: 'Erro ao remover o Lembrete.', duration: 3000 }).present();
+    //     });
+    // }
+  }

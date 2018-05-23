@@ -36,4 +36,7 @@ export class LembretesProvider {
         ref => ref.orderByChild('id_lembrete').equalTo(1));
     }
 
-  }
+    // remove(lembretes: Lembretes) {
+    //     return this.db.list('lembretes/').remove(lembretes);
+    // }
+}
