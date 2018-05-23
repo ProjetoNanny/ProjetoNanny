@@ -12,33 +12,64 @@ export class DependenteProvider {
   public myPhotosRef: any;
   public myPhoto: any;
   public myPhotoURL: any;
-  user = firebase.auth().currentUser;
-  private dependenteList = this.db.list<Dependente>('/dependentes');
   private PATH = "dependentes/";
-  // dependentes: AngularFireList<Dependente[]>;
+  private dependenteList = this.db.list<Dependente>('/dependentes');
   constructor(
     public db: AngularFireDatabase,
     public firebaseApp: FirebaseApp,
     public http: Http,
     public toastCtrl: ToastController) {}
   salvar(dependente: Dependente){
-    dependente.id_responsavel = this.user.uid;
-    return this.dependenteList.push(dependente)
+    dependente.id_responsavel = firebase.auth().currentUser.uid;
+    if(dependente.key == null){
+      return this.dependenteList.push(dependente)
+      .then(resolve => {
+        let toast = this.toastCtrl.create({
+          message: "Cadastro realizado com sucesso.",
+          duration: 3000
+        });
+        toast.present();
+        console.log("success");
+      }, reject =>{
+        let toast = this.toastCtrl.create({
+          message: "Erro ao realizar o cadastro, por favor, verificar os campos.",
+          duration: 3000
+        });
+      });
+    }else{
+      return this.dependenteList.update(dependente.key,dependente)
+      .then(resolve => {
+        let toast = this.toastCtrl.create({
+          message: "Cadastro realizado com sucesso.",
+          duration: 3000
+        });
+        toast.present();
+        console.log("success update");
+      }, reject =>{
+        let toast = this.toastCtrl.create({
+          message: "Erro ao realizar o cadastro, por favor, verificar os campos.",
+          duration: 3000
+        });
+      });
+    }
+  }
+
+  excluir(dependente: Dependente){
+    return this.dependenteList.remove(dependente.key)
     .then(resolve => {
       let toast = this.toastCtrl.create({
-        message: "Cadastro realizado com sucesso.",
+        message: "Dependente " + dependente.nome + " excluido com sucesso.",
         duration: 3000
       });
       toast.present();
-      console.log("success");
+      console.log("success delete");
     }, reject =>{
       let toast = this.toastCtrl.create({
-        message: "Erro ao realizar o cadastro, por favor, verificar os campos.",
+        message: "Erro ao excluir o dependente, por favor, verificar os campos.",
         duration: 3000
       });
     });
   }
-
   getDependentes(){
     return this.db.list<Dependente>('/dependentes',
     ref => ref.orderByChild('id_responsavel').equalTo(1));
@@ -85,6 +116,7 @@ export class DependenteProvider {
       this.myPhotoURL = savedPicture.downloadURL;
     });
   }
+
   getAll() {
   return this.db.list(this.PATH, ref => ref.orderByChild("id_responsavel")
     .equalTo(firebase.auth().currentUser.uid))
@@ -92,5 +124,5 @@ export class DependenteProvider {
     .map(changes => {
       return changes.map(c => ({ key: c.payload.key, ...c.payload.val() }));
     })
-}
+  }
 }
