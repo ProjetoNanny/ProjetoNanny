@@ -1,5 +1,5 @@
 export class Lembretes {
-    id_lembrete: string;
+    key: string;
     id_dependente: string;
     id_usuario: string;
     titulo: string;

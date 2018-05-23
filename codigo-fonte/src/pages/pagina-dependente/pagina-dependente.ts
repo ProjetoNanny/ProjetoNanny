@@ -37,6 +37,6 @@ export class PaginaDependentePage {
   }
   editarDependente() {
     console.log(this.dependente);
-    this.navCtrl.push('DependentePage', { dependente: this.dependente });
+    this.navCtrl.push(DependentePage, { dependente: this.dependente });
   }
 }

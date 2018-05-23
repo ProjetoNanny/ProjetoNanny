@@ -17,8 +17,8 @@
           <div *ngIf="dependente.foto_perfil != null">
             <img src="{{dependente.foto_perfil}}" />
           </div>
-          <p>{{ dependente.nome }}</p>
         </ion-item>
+        <p class="centralizado no-padding">{{ dependente.nome }}</p>
       </ion-col>
       <ion-col col-6>
         <ion-item (click)="adicionarDependente(dependente)" class="botao_circulo centralizado no-padding">

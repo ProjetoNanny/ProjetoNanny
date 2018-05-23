@@ -5,6 +5,7 @@ import { DependenteProvider } from '../../providers/dependente/dependente';
 import { AngularFireDatabase } from 'angularfire2/database';
 import { Observable } from 'rxjs/Observable';
 import { PaginaDependentePage } from '../pagina-dependente/pagina-dependente';
+import { DependentePage } from '../cadastro-dependente/dependente';
 import firebase from 'firebase';
 /**
  * Generated class for the ListaDependentesPage page.
@@ -32,6 +33,6 @@ export class ListaDependentesPage {
     this.navCtrl.push("PaginaDependentePage", { dependente: dependente });
   }
   adicionarDependente() {
-    this.navCtrl.push("DependentePage");
+    this.navCtrl.push(DependentePage);
   }
 }

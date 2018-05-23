@@ -27,7 +27,8 @@
   </ion-item>
   <ion-item>
     <ion-label floating>Data de Nascimento</ion-label>
-    <ion-input type="date" [(ngModel)]="usuario.data_nasc" placeholder=""></ion-input>
+    <!-- <ion-input type="date" [(ngModel)]="usuario.data_nasc" placeholder=""></ion-input> -->
+    <ion-datetime displayFormat="MM/DD/YYYY" [(ngModel)]="usuario.data_nasc"></ion-datetime>
   </ion-item>
   <ion-item>
     <ion-label floating>País</ion-label>
