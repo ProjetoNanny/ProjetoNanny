@@ -25677,3 +25677,60 @@ ion-navbar.toolbar {
   min-height: calc(46px + constant(safe-area-inset-bottom));
   min-height: calc(46px + env(safe-area-inset-bottom));
 }
+
+.header .item-inner {
+  border-bottom: 0px !important;
+}
+
+.header .item-inner .botao_ajuda {
+  color: #fff;
+  background-color: #777;
+  border-radius: 100%;
+  width: 28px;
+  height: 25px;
+  text-align: center;
+}
+
+.content {
+  background-color: #fffafa !important;
+}
+
+.content .item {
+  padding-left: 0;
+  background-color: #fffafa !important;
+}
+
+.content .botao-primario {
+  margin: 10px 0;
+  width: 100%;
+  background-color: #FF6D00;
+  color: #fff;
+  border-radius: 10px;
+  height: 50px;
+}
+
+.content .centralizado {
+  text-align: center;
+  margin: 0 auto;
+  float: none;
+}
+
+.content .botao_circulo {
+  width: 130px;
+  height: 130px;
+  border-radius: 100%;
+  border: 1px solid #a1a1a1;
+}
+
+.content .botao_circulo i, .content .botao_circulo ion-icon {
+  font-size: 30px;
+}
+
+page-home .botao_sair {
+  width: 25%;
+}
+
+page-lista-dependentes .label, page-lista-dependentes .item-inner {
+  margin: 0 !important;
+  padding: 0 !important;
+}

@@ -28,6 +28,7 @@ export class CadastroLembretesPage {
     let resposta = this.lembretesProvider.salvar(lembretes);
     if(resposta)
       this.navCtrl.popToRoot();
+
   }
   //ionViewDidLoad() {
     //console.log('ionViewDidLoad CadastroLembretesPage');

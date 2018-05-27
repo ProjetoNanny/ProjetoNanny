@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { CadastroLembretesPage} from '../cadastro-lembretes/cadastro-lembretes';
 import { ToastController } from 'ionic-angular';
 import { Lembretes } from '../../models/lembretes';
 import { LembretesProvider } from '../../providers/lembretes/lembretes';
@@ -34,9 +35,10 @@ export class LembretesPage {
       })
   }
 
-  edit(){
-
-  }
+    editarLembretes() {
+      console.log(this.lembretes);
+      this.navCtrl.push(LembretesPage);
+    }
 
   remove(lembretes: Lembretes) {
       return this.db.list(this.PATH).remove(lembretes.key)

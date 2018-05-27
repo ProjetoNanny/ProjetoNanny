@@ -7,7 +7,7 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>Todos os Lembretes</ion-title>
+    <ion-title>Lembretes</ion-title>
   </ion-navbar>
 
 </ion-header>
@@ -20,9 +20,10 @@
         <h1>{{ lembretes.titulo }}</h1>
       </ion-item>
       <ion-item-options side="left">
-        <button ion-button color="secondary" (click)="edit(lembretes)">
+        <button ion-button color="secondary" (click)="editarLembretes(lembretes)">
           <ion-icon name="create"></ion-icon>
         </button>
+
         <button ion-button color="danger" (click)="remove(lembretes)">
           <ion-icon name="trash"></ion-icon>
         </button>
