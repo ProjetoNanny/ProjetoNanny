@@ -20,10 +20,11 @@
         <h1>{{ lembretes.titulo }}</h1>
       </ion-item>
       <ion-item-options side="left">
-        <button ion-button color="secondary" (click)="editarLembretes(lembretes)">
-          <ion-icon name="create"></ion-icon>
-        </button>
-
+        <div *ngIf="lembretes.titulo != null">
+          <button ion-button color="secondary" (click)="editar(lembretes)">
+            <ion-icon name="create"></ion-icon>
+          </button>
+        </div>
         <button ion-button color="danger" (click)="remove(lembretes)">
           <ion-icon name="trash"></ion-icon>
         </button>

@@ -45,7 +45,8 @@ var PaginaDependentePageModule = /** @class */ (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PaginaDependentePage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(21);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_dependente_dependente__ = __webpack_require__(88);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__pages_cadastro_dependente_dependente__ = __webpack_require__(125);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_dependente_dependente__ = __webpack_require__(88);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -55,6 +56,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
+
 
 
 
@@ -85,7 +87,7 @@ var PaginaDependentePage = /** @class */ (function () {
     };
     PaginaDependentePage.prototype.editarDependente = function () {
         console.log(this.dependente);
-        this.navCtrl.push('DependentePage', { dependente: this.dependente });
+        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_2__pages_cadastro_dependente_dependente__["a" /* DependentePage */], { dependente: this.dependente });
     };
     PaginaDependentePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
@@ -93,7 +95,7 @@ var PaginaDependentePage = /** @class */ (function () {
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */],
-            __WEBPACK_IMPORTED_MODULE_2__providers_dependente_dependente__["a" /* DependenteProvider */]])
+            __WEBPACK_IMPORTED_MODULE_3__providers_dependente_dependente__["a" /* DependenteProvider */]])
     ], PaginaDependentePage);
     return PaginaDependentePage;
 }());

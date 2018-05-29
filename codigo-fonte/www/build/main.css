@@ -25734,3 +25734,30 @@ page-lista-dependentes .label, page-lista-dependentes .item-inner {
   margin: 0 !important;
   padding: 0 !important;
 }
+
+body {
+  width: 100%;
+  margin: 0 auto !important;
+  float: none;
+  background-color: #fffafa !important;
+}
+
+page-login .content {
+  background-color: #fffafa !important;
+}
+
+page-login .conteudo {
+  margin: 0 auto !important;
+  width: 60%;
+  background-color: #fffafa !important;
+}
+
+page-login .logo_login img {
+  max-width: 80%;
+  max-height: 200px;
+  margin-bottom: 20px;
+}
+
+page-login .login-campos {
+  margin-bottom: 50px;
+}

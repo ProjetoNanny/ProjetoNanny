@@ -1,10 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { CadastroLembretesPage} from '../cadastro-lembretes/cadastro-lembretes';
 import { ToastController } from 'ionic-angular';
 import { Lembretes } from '../../models/lembretes';
 import { LembretesProvider } from '../../providers/lembretes/lembretes';
-import { FormBuilder,FormGroup,Validators,FormControl } from "@angular/forms";
 import { AngularFireDatabase } from 'angularfire2/database';
 import { Observable } from 'rxjs/Observable';
 import firebase from 'firebase';
@@ -20,7 +18,6 @@ export class LembretesPage {
   constructor(public navCtrl: NavController,
     public navParams: NavParams,
     private db: AngularFireDatabase,
-    private lembretesProvider: LembretesProvider,
     public toastCtrl: ToastController
   ) {
       this.lembretes = this.getAll();
@@ -35,9 +32,12 @@ export class LembretesPage {
       })
   }
 
-    editarLembretes() {
-      console.log(this.lembretes);
-      this.navCtrl.push(LembretesPage);
+  ionViewDidLoad() {
+    console.log('ionViewDidLoad LembretesPage');
+  }
+    editar() {
+      this.contact = this.navParams.data.lembretes || { };
+      this.navCtrl.push(LembretesPage, { lembretes: this.lembretes });
     }
 
   remove(lembretes: Lembretes) {
