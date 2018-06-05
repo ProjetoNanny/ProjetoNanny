@@ -13,12 +13,14 @@ import { Observable } from 'rxjs/Observable';
 })
 export class CadastroLembretesPage {
     form: FormGroup;
-    lembretes = {} as Lembretes;
+    lembrete = {} as Lembretes;
     dependentes: Observable<any>;
 
   constructor(private lembretesProvider: LembretesProvider,
     public navCtrl: NavController, public navParams: NavParams,
     public dependenteProvider: DependenteProvider) {
+      this.lembrete = navParams.get("lembrete") || {};
+      console.log(this.lembrete);
       this.dependentes=dependenteProvider.getAll();
       console.log(this.dependentes);
   }

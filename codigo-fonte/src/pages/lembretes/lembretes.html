@@ -15,17 +15,17 @@
 
 <ion-content padding>
   <ion-list>
-    <ion-item-sliding *ngFor="let lembretes of lembretes | async">
+    <ion-item-sliding *ngFor="let lembrete of lembretes | async">
       <ion-item>
-        <h1>{{ lembretes.titulo }}</h1>
+        <h1>{{ lembrete.titulo }}</h1>
       </ion-item>
       <ion-item-options side="left">
-        <div *ngIf="lembretes.titulo != null">
-          <button ion-button color="secondary" (click)="editar(lembretes)">
+        <div *ngIf="lembrete.titulo != null">
+          <button ion-button color="secondary" (click)="editar(lembrete)">
             <ion-icon name="create"></ion-icon>
           </button>
         </div>
-        <button ion-button color="danger" (click)="remove(lembretes)">
+        <button ion-button color="danger" (click)="remove(lembrete)">
           <ion-icon name="trash"></ion-icon>
         </button>
       </ion-item-options>

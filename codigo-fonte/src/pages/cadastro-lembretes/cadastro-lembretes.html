@@ -1,43 +1,48 @@
 <ion-header>
   <ion-navbar color="primary">
+    <div *ngIf="lembrete.titulo == null">
     <ion-title>Cadastrar Lembretes</ion-title>
+  </div>
+  <div *ngElse>
+  <ion-title>Atualizar Lembretes</ion-title>
+</div>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
   <ion-item>
     <ion-label floating>Dependente</ion-label>
-    <ion-select [(ngModel)]="lembretes.id_dependete">
+    <ion-select [(ngModel)]="lembrete.id_dependete">
           <ion-option *ngFor="let dependente of dependentes | async" value="{{dependente.key}}">{{dependente.nome}}</ion-option>
     </ion-select>
   </ion-item>
   <ion-item>
     <ion-label floating>Título</ion-label>
-    <ion-input type="text" [(ngModel)]="lembretes.titulo" required></ion-input>
+    <ion-input type="text" [(ngModel)]="lembrete.titulo" required></ion-input>
   </ion-item>
   <ion-item>
     <ion-label stacked>Data Início</ion-label>
-    <ion-input type="date" displayFormat="mm/dd/yyyy" pickerFormat="MMMM YYYY" [(ngModel)]="lembretes.data_inicial"></ion-input>
+    <ion-input type="date" displayFormat="mm/dd/yyyy" pickerFormat="MMMM YYYY" [(ngModel)]="lembrete.data_inicial"></ion-input>
   </ion-item>
   <ion-item>
     <ion-label stacked>Data Final</ion-label>
-    <ion-input type="date" [(ngModel)]="lembretes.data_final"></ion-input>
+    <ion-input type="date" [(ngModel)]="lembrete.data_final"></ion-input>
   </ion-item>
   <ion-item>
     <ion-label floating>Repetir todo dia?</ion-label>
-    <ion-select [(ngModel)]="lembretes.repeticao"  >
+    <ion-select [(ngModel)]="lembrete.repeticao"  >
       <ion-option value="Sim">Sim</ion-option>
       <ion-option value="Não">Não</ion-option>
     </ion-select>
   </ion-item>
   <ion-item>
     <ion-label floating>Localização</ion-label>
-    <ion-input type="text" [(ngModel)]="lembretes.localizacao"></ion-input>
+    <ion-input type="text" [(ngModel)]="lembrete.localizacao"></ion-input>
   </ion-item>
   <ion-item>
     <ion-label floating>Anotações</ion-label>
-    <ion-input type="text" [(ngModel)]="lembretes.anotacoes"></ion-input>
+    <ion-input type="text" [(ngModel)]="lembrete.anotacoes"></ion-input>
   </ion-item>
   <button class="button button-positive button-block" type="submit" ng-disabled="contato.$invalid">Salvar</button>
-  <button ion-button (click)="save(lembretes)">Cadastrar</button>
+  <button ion-button (click)="save(lembrete)">Cadastrar</button>
   </ion-content>
