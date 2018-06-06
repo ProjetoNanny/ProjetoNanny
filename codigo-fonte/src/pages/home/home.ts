@@ -3,6 +3,7 @@ import { NavController } from 'ionic-angular';
 import { PerfilUsuarioPage } from '../perfil-usuario/perfil-usuario';
 import { DependentePage } from '../cadastro-dependente/dependente';
 import { LembretesPage } from '../lembretes/lembretes';
+import { CartaoPage} from '../cartao/cartao';
 import { CadastroLembretesPage} from '../cadastro-lembretes/cadastro-lembretes';
 import { UsuarioProvider } from '../../providers/usuario/usuario';
 import { AngularFireAuth } from 'angularfire2/auth';
@@ -53,6 +54,11 @@ export class HomePage {
   async pushDependente(){
     this.navCtrl.push(DependentePage);
   }
+
+  async pushCartao(){
+    this.navCtrl.push(CartaoPage);
+  }
+
   async pushUsuario(){
     console.log(this.usuario);
     this.navCtrl.push(PerfilUsuarioPage, {usuario: this.usuario});
