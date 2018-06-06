@@ -1,6 +1,6 @@
-webpackJsonp([8],{
+webpackJsonp([9],{
 
-/***/ 1007:
+/***/ 1008:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -20,7 +20,7 @@ var environment = {
 
 /***/ }),
 
-/***/ 1008:
+/***/ 1009:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -29,7 +29,7 @@ var environment = {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(21);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(601);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(598);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_login_login__ = __webpack_require__(220);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_login_login__ = __webpack_require__(219);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_home_home__ = __webpack_require__(193);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_angularfire2_auth__ = __webpack_require__(62);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -86,12 +86,12 @@ var MyApp = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 1009:
+/***/ 1010:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CadastroLembretesProvider; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_common_http__ = __webpack_require__(94);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_common_http__ = __webpack_require__(68);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(1);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -120,13 +120,53 @@ var CadastroLembretesProvider = /** @class */ (function () {
 
 /***/ }),
 
+/***/ 1011:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CartaoProvider; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_common_http__ = __webpack_require__(68);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(1);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+/*
+  Generated class for the CartaoProvider provider.
+
+  See https://angular.io/guide/dependency-injection for more info on providers
+  and Angular DI.
+*/
+var CartaoProvider = /** @class */ (function () {
+    function CartaoProvider(http) {
+        this.http = http;
+        console.log('Hello CartaoProvider Provider');
+    }
+    CartaoProvider = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["A" /* Injectable */])(),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__angular_common_http__["a" /* HttpClient */]])
+    ], CartaoProvider);
+    return CartaoProvider;
+}());
+
+//# sourceMappingURL=cartao.js.map
+
+/***/ }),
+
 /***/ 118:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return UsuarioProvider; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(130);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(131);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_angularfire2__ = __webpack_require__(41);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_angularfire2_database__ = __webpack_require__(60);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_firebase_app__ = __webpack_require__(110);
@@ -244,7 +284,7 @@ var UsuarioProvider = /** @class */ (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DependentePage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(21);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_dependente_dependente__ = __webpack_require__(88);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_dependente_dependente__ = __webpack_require__(89);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -313,18 +353,15 @@ var DependentePage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 185:
+/***/ 126:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LembretesProvider; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_common_http__ = __webpack_require__(94);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(21);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_angularfire2__ = __webpack_require__(41);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_angularfire2_database__ = __webpack_require__(60);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_firebase_app__ = __webpack_require__(110);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_firebase_app___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_firebase_app__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CadastroLembretesPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(21);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_lembretes_lembretes__ = __webpack_require__(545);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_dependente_dependente__ = __webpack_require__(89);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -338,46 +375,36 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-
-
-var LembretesProvider = /** @class */ (function () {
-    function LembretesProvider(db, firebaseApp, http, toastCtrl) {
-        this.db = db;
-        this.firebaseApp = firebaseApp;
-        this.http = http;
-        this.toastCtrl = toastCtrl;
-        this.user = __WEBPACK_IMPORTED_MODULE_5_firebase_app__["auth"]().currentUser;
-        this.lembretesList = this.db.list('/lembretes');
+var CadastroLembretesPage = /** @class */ (function () {
+    function CadastroLembretesPage(lembretesProvider, navCtrl, navParams, dependenteProvider) {
+        this.lembretesProvider = lembretesProvider;
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+        this.dependenteProvider = dependenteProvider;
+        this.lembrete = {};
+        this.lembrete = navParams.get("lembrete") || {};
+        console.log(this.lembrete);
+        this.dependentes = dependenteProvider.getAll();
+        console.log(this.dependentes);
     }
-    LembretesProvider.prototype.salvar = function (lembretes) {
-        var _this = this;
-        //lembretes.id_dependente = ;
-        lembretes.id_usuario = __WEBPACK_IMPORTED_MODULE_5_firebase_app__["auth"]().currentUser.uid;
-        console.log(lembretes);
-        return this.lembretesList.push(lembretes)
-            .then(function (resolve) {
-            var toast = _this.toastCtrl.create({
-                message: "Cadastro realizado com sucesso.",
-                duration: 3000
-            });
-            toast.present();
-            console.log("success");
-        });
+    CadastroLembretesPage.prototype.save = function (lembretes) {
+        console.log('lembretes:' + lembretes);
+        var resposta = this.lembretesProvider.salvar(lembretes);
+        if (resposta)
+            this.navCtrl.popToRoot();
     };
-    LembretesProvider.prototype.getLembretes = function () {
-        return this.db.list('/lembretes', function (ref) { return ref.orderByChild('id_lembrete').equalTo(1); });
-    };
-    LembretesProvider = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["A" /* Injectable */])(),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_4_angularfire2_database__["a" /* AngularFireDatabase */],
-            __WEBPACK_IMPORTED_MODULE_3_angularfire2__["b" /* FirebaseApp */],
-            __WEBPACK_IMPORTED_MODULE_0__angular_common_http__["a" /* HttpClient */],
-            __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["i" /* ToastController */]])
-    ], LembretesProvider);
-    return LembretesProvider;
+    CadastroLembretesPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-cadastro-lembretes',template:/*ion-inline-start:"c:\mobile\projetoNanny\src\pages\cadastro-lembretes\cadastro-lembretes.html"*/'<ion-header>\n  <ion-navbar color="primary">\n    <div *ngIf="lembrete.titulo == null">\n    <ion-title>Cadastrar Lembretes</ion-title>\n  </div>\n  <div *ngElse>\n  <ion-title>Atualizar Lembretes</ion-title>\n</div>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n  <ion-item>\n    <ion-label floating>Dependente</ion-label>\n    <ion-select [(ngModel)]="lembrete.id_dependete">\n          <ion-option *ngFor="let dependente of dependentes | async" value="{{dependente.key}}">{{dependente.nome}}</ion-option>\n    </ion-select>\n  </ion-item>\n  <ion-item>\n    <ion-label floating>Título</ion-label>\n    <ion-input type="text" [(ngModel)]="lembrete.titulo" required></ion-input>\n  </ion-item>\n  <ion-item>\n    <ion-label stacked>Data Início</ion-label>\n    <ion-input type="date" displayFormat="mm/dd/yyyy" pickerFormat="MMMM YYYY" [(ngModel)]="lembrete.data_inicial"></ion-input>\n  </ion-item>\n  <ion-item>\n    <ion-label stacked>Data Final</ion-label>\n    <ion-input type="date" [(ngModel)]="lembrete.data_final"></ion-input>\n  </ion-item>\n  <ion-item>\n    <ion-label floating>Repetir todo dia?</ion-label>\n    <ion-select [(ngModel)]="lembrete.repeticao"  >\n      <ion-option value="Sim">Sim</ion-option>\n      <ion-option value="Não">Não</ion-option>\n    </ion-select>\n  </ion-item>\n  <ion-item>\n    <ion-label floating>Localização</ion-label>\n    <ion-input type="text" [(ngModel)]="lembrete.localizacao"></ion-input>\n  </ion-item>\n  <ion-item>\n    <ion-label floating>Anotações</ion-label>\n    <ion-input type="text" [(ngModel)]="lembrete.anotacoes"></ion-input>\n  </ion-item>\n  <button class="button button-positive button-block" type="submit" ng-disabled="contato.$invalid">Salvar</button>\n  <button ion-button (click)="save(lembrete)">Cadastrar</button>\n  </ion-content>\n'/*ion-inline-end:"c:\mobile\projetoNanny\src\pages\cadastro-lembretes\cadastro-lembretes.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2__providers_lembretes_lembretes__["a" /* LembretesProvider */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */],
+            __WEBPACK_IMPORTED_MODULE_3__providers_dependente_dependente__["a" /* DependenteProvider */]])
+    ], CadastroLembretesPage);
+    return CadastroLembretesPage;
 }());
 
-//# sourceMappingURL=lembretes.js.map
+//# sourceMappingURL=cadastro-lembretes.js.map
 
 /***/ }),
 
@@ -386,7 +413,7 @@ var LembretesProvider = /** @class */ (function () {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AuthProvider; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_common_http__ = __webpack_require__(94);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_common_http__ = __webpack_require__(68);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_angularfire2_auth__ = __webpack_require__(62);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -428,13 +455,13 @@ var AuthProvider = /** @class */ (function () {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HomePage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(21);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__perfil_usuario_perfil_usuario__ = __webpack_require__(221);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__perfil_usuario_perfil_usuario__ = __webpack_require__(220);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__cadastro_dependente_dependente__ = __webpack_require__(125);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__lembretes_lembretes__ = __webpack_require__(218);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__cadastro_lembretes_cadastro_lembretes__ = __webpack_require__(216);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__lembretes_lembretes__ = __webpack_require__(217);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__cadastro_lembretes_cadastro_lembretes__ = __webpack_require__(126);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__providers_usuario_usuario__ = __webpack_require__(118);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_angularfire2_auth__ = __webpack_require__(62);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__lista_dependentes_lista_dependentes__ = __webpack_require__(219);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__lista_dependentes_lista_dependentes__ = __webpack_require__(218);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -588,59 +615,6 @@ var HomePage = /** @class */ (function () {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CadastroLembretesPage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(21);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_lembretes_lembretes__ = __webpack_require__(185);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_dependente_dependente__ = __webpack_require__(88);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-
-var CadastroLembretesPage = /** @class */ (function () {
-    function CadastroLembretesPage(lembretesProvider, navCtrl, navParams, dependenteProvider) {
-        this.lembretesProvider = lembretesProvider;
-        this.navCtrl = navCtrl;
-        this.navParams = navParams;
-        this.dependenteProvider = dependenteProvider;
-        this.lembretes = {};
-        this.dependentes = dependenteProvider.getAll();
-        console.log(this.dependentes);
-    }
-    CadastroLembretesPage.prototype.save = function (lembretes) {
-        console.log('lembretes:' + lembretes);
-        var resposta = this.lembretesProvider.salvar(lembretes);
-        if (resposta)
-            this.navCtrl.popToRoot();
-    };
-    CadastroLembretesPage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-cadastro-lembretes',template:/*ion-inline-start:"c:\mobile\projetoNanny\src\pages\cadastro-lembretes\cadastro-lembretes.html"*/'<ion-header>\n  <ion-navbar color="primary">\n    <ion-title>Cadastrar Lembretes</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n  <ion-item>\n    <ion-label floating>Dependente</ion-label>\n    <ion-select [(ngModel)]="lembretes.id_dependete">\n          <ion-option *ngFor="let dependente of dependentes | async" value="{{dependente.key}}">{{dependente.nome}}</ion-option>\n    </ion-select>\n  </ion-item>\n  <ion-item>\n    <ion-label floating>Título</ion-label>\n    <ion-input type="text" [(ngModel)]="lembretes.titulo" required></ion-input>\n  </ion-item>\n  <ion-item>\n    <ion-label stacked>Data Início</ion-label>\n    <ion-input type="date" displayFormat="mm/dd/yyyy" pickerFormat="MMMM YYYY" [(ngModel)]="lembretes.data_inicial"></ion-input>\n  </ion-item>\n  <ion-item>\n    <ion-label stacked>Data Final</ion-label>\n    <ion-input type="date" [(ngModel)]="lembretes.data_final"></ion-input>\n  </ion-item>\n  <ion-item>\n    <ion-label floating>Repetir todo dia?</ion-label>\n    <ion-select [(ngModel)]="lembretes.repeticao"  >\n      <ion-option value="Sim">Sim</ion-option>\n      <ion-option value="Não">Não</ion-option>\n    </ion-select>\n  </ion-item>\n  <ion-item>\n    <ion-label floating>Localização</ion-label>\n    <ion-input type="text" [(ngModel)]="lembretes.localizacao"></ion-input>\n  </ion-item>\n  <ion-item>\n    <ion-label floating>Anotações</ion-label>\n    <ion-input type="text" [(ngModel)]="lembretes.anotacoes"></ion-input>\n  </ion-item>\n  <button class="button button-positive button-block" type="submit" ng-disabled="contato.$invalid">Salvar</button>\n  <button ion-button (click)="save(lembretes)">Cadastrar</button>\n  </ion-content>\n'/*ion-inline-end:"c:\mobile\projetoNanny\src\pages\cadastro-lembretes\cadastro-lembretes.html"*/,
-        }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2__providers_lembretes_lembretes__["a" /* LembretesProvider */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */],
-            __WEBPACK_IMPORTED_MODULE_3__providers_dependente_dependente__["a" /* DependenteProvider */]])
-    ], CadastroLembretesPage);
-    return CadastroLembretesPage;
-}());
-
-//# sourceMappingURL=cadastro-lembretes.js.map
-
-/***/ }),
-
-/***/ 217:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CadastroPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(21);
@@ -736,16 +710,17 @@ var CadastroPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 218:
+/***/ 217:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LembretesPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(21);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_angularfire2_database__ = __webpack_require__(60);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_firebase__ = __webpack_require__(548);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_firebase___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_firebase__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__cadastro_lembretes_cadastro_lembretes__ = __webpack_require__(126);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_angularfire2_database__ = __webpack_require__(60);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_firebase__ = __webpack_require__(548);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_firebase___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_firebase__);
 var __assign = (this && this.__assign) || Object.assign || function(t) {
     for (var s, i = 1, n = arguments.length; i < n; i++) {
         s = arguments[i];
@@ -768,6 +743,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
+
 var LembretesPage = /** @class */ (function () {
     function LembretesPage(navCtrl, navParams, db, toastCtrl) {
         this.navCtrl = navCtrl;
@@ -777,10 +753,9 @@ var LembretesPage = /** @class */ (function () {
         this.PATH = "lembretes/";
         this.lembretes = this.getAll();
     }
-    LembretesPage_1 = LembretesPage;
     LembretesPage.prototype.getAll = function () {
         return this.db.list(this.PATH, function (ref) { return ref.orderByChild("id_usuario")
-            .equalTo(__WEBPACK_IMPORTED_MODULE_3_firebase___default.a.auth().currentUser.uid); })
+            .equalTo(__WEBPACK_IMPORTED_MODULE_4_firebase___default.a.auth().currentUser.uid); })
             .snapshotChanges()
             .map(function (changes) {
             return changes.map(function (c) { return (__assign({ key: c.payload.key }, c.payload.val())); });
@@ -789,9 +764,8 @@ var LembretesPage = /** @class */ (function () {
     LembretesPage.prototype.ionViewDidLoad = function () {
         console.log('ionViewDidLoad LembretesPage');
     };
-    LembretesPage.prototype.editar = function () {
-        this.contact = this.navParams.data.lembretes || {};
-        this.navCtrl.push(LembretesPage_1, { lembretes: this.lembretes });
+    LembretesPage.prototype.editar = function (lembrete) {
+        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_2__cadastro_lembretes_cadastro_lembretes__["a" /* CadastroLembretesPage */], { lembrete: lembrete });
     };
     LembretesPage.prototype.remove = function (lembretes) {
         var _this = this;
@@ -805,28 +779,30 @@ var LembretesPage = /** @class */ (function () {
             console.log("success");
         });
     };
-    LembretesPage = LembretesPage_1 = __decorate([
+    LembretesPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-lembretes',template:/*ion-inline-start:"c:\mobile\projetoNanny\src\pages\lembretes\lembretes.html"*/'<!--\n  Generated template for the LembretesPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>Lembretes</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n  <ion-list>\n    <ion-item-sliding *ngFor="let lembretes of lembretes | async">\n      <ion-item>\n        <h1>{{ lembretes.titulo }}</h1>\n      </ion-item>\n      <ion-item-options side="left">\n        <div *ngIf="lembretes.titulo != null">\n          <button ion-button color="secondary" (click)="editar(lembretes)">\n            <ion-icon name="create"></ion-icon>\n          </button>\n        </div>\n        <button ion-button color="danger" (click)="remove(lembretes)">\n          <ion-icon name="trash"></ion-icon>\n        </button>\n      </ion-item-options>\n    </ion-item-sliding>\n  </ion-list>\n</ion-content>\n'/*ion-inline-end:"c:\mobile\projetoNanny\src\pages\lembretes\lembretes.html"*/,
+            selector: 'page-lembretes',template:/*ion-inline-start:"c:\mobile\projetoNanny\src\pages\lembretes\lembretes.html"*/'<!--\n  Generated template for the LembretesPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>Lembretes</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n  <ion-list>\n    <ion-item-sliding *ngFor="let lembrete of lembretes | async">\n      <ion-item>\n        <h1>{{ lembrete.titulo }}</h1>\n      </ion-item>\n      <ion-item-options side="left">\n        <div *ngIf="lembrete.titulo != null">\n          <button ion-button color="secondary" (click)="editar(lembrete)">\n            <ion-icon name="create"></ion-icon>\n          </button>\n        </div>\n        <button ion-button color="danger" (click)="remove(lembrete)">\n          <ion-icon name="trash"></ion-icon>\n        </button>\n      </ion-item-options>\n    </ion-item-sliding>\n  </ion-list>\n</ion-content>\n'/*ion-inline-end:"c:\mobile\projetoNanny\src\pages\lembretes\lembretes.html"*/,
         }),
-        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_2_angularfire2_database__["a" /* AngularFireDatabase */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2_angularfire2_database__["a" /* AngularFireDatabase */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* ToastController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* ToastController */]) === "function" && _d || Object])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */],
+            __WEBPACK_IMPORTED_MODULE_3_angularfire2_database__["a" /* AngularFireDatabase */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* ToastController */]])
     ], LembretesPage);
     return LembretesPage;
-    var LembretesPage_1, _a, _b, _c, _d;
 }());
 
 //# sourceMappingURL=lembretes.js.map
 
 /***/ }),
 
-/***/ 219:
+/***/ 218:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ListaDependentesPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(21);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_dependente_dependente__ = __webpack_require__(88);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_dependente_dependente__ = __webpack_require__(89);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_angularfire2_database__ = __webpack_require__(60);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__cadastro_dependente_dependente__ = __webpack_require__(125);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -881,7 +857,7 @@ var ListaDependentesPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 220:
+/***/ 219:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -890,7 +866,7 @@ var ListaDependentesPage = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(21);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_angularfire2_auth__ = __webpack_require__(62);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__home_home__ = __webpack_require__(193);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__cadastro_cadastro__ = __webpack_require__(217);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__cadastro_cadastro__ = __webpack_require__(216);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1003,7 +979,7 @@ var LoginPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 221:
+/***/ 220:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1011,7 +987,7 @@ var LoginPage = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(21);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_usuario_usuario__ = __webpack_require__(118);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ionic_native__ = __webpack_require__(326);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ionic_native__ = __webpack_require__(325);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_firebase__ = __webpack_require__(548);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_firebase___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_firebase__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__providers_auth_auth__ = __webpack_require__(186);
@@ -1146,7 +1122,7 @@ var PerfilUsuarioPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 232:
+/***/ 231:
 /***/ (function(module, exports) {
 
 function webpackEmptyAsyncContext(req) {
@@ -1159,44 +1135,48 @@ function webpackEmptyAsyncContext(req) {
 webpackEmptyAsyncContext.keys = function() { return []; };
 webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
 module.exports = webpackEmptyAsyncContext;
-webpackEmptyAsyncContext.id = 232;
+webpackEmptyAsyncContext.id = 231;
 
 /***/ }),
 
-/***/ 278:
+/***/ 277:
 /***/ (function(module, exports, __webpack_require__) {
 
 var map = {
 	"../pages/cadastro-dependente/dependente.module": [
-		1010,
-		7
+		1012,
+		8
 	],
 	"../pages/cadastro-lembretes/cadastro-lembretes.module": [
-		1011,
-		6
+		1013,
+		7
 	],
 	"../pages/cadastro/cadastro.module": [
-		1012,
+		1014,
+		6
+	],
+	"../pages/cartao/cartao.module": [
+		1015,
 		5
 	],
 	"../pages/lembretes/lembretes.module": [
-		1013,
+		1016,
 		4
 	],
 	"../pages/lista-dependentes/lista-dependentes.module": [
-		1014,
+		1017,
 		3
 	],
 	"../pages/login/login.module": [
-		1015,
+		1019,
 		2
 	],
 	"../pages/pagina-dependente/pagina-dependente.module": [
-		1016,
+		1018,
 		0
 	],
 	"../pages/perfil-usuario/perfil-usuario.module": [
-		1017,
+		1020,
 		1
 	]
 };
@@ -1211,8 +1191,76 @@ function webpackAsyncContext(req) {
 webpackAsyncContext.keys = function webpackAsyncContextKeys() {
 	return Object.keys(map);
 };
-webpackAsyncContext.id = 278;
+webpackAsyncContext.id = 277;
 module.exports = webpackAsyncContext;
+
+/***/ }),
+
+/***/ 545:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LembretesProvider; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_common_http__ = __webpack_require__(68);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(21);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_angularfire2__ = __webpack_require__(41);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_angularfire2_database__ = __webpack_require__(60);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_firebase_app__ = __webpack_require__(110);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_firebase_app___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_firebase_app__);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+
+var LembretesProvider = /** @class */ (function () {
+    function LembretesProvider(db, firebaseApp, http, toastCtrl) {
+        this.db = db;
+        this.firebaseApp = firebaseApp;
+        this.http = http;
+        this.toastCtrl = toastCtrl;
+        this.user = __WEBPACK_IMPORTED_MODULE_5_firebase_app__["auth"]().currentUser;
+        this.lembretesList = this.db.list('/lembretes');
+    }
+    LembretesProvider.prototype.salvar = function (lembretes) {
+        var _this = this;
+        //lembretes.id_dependente = ;
+        lembretes.id_usuario = __WEBPACK_IMPORTED_MODULE_5_firebase_app__["auth"]().currentUser.uid;
+        console.log(lembretes);
+        return this.lembretesList.push(lembretes)
+            .then(function (resolve) {
+            var toast = _this.toastCtrl.create({
+                message: "Cadastro realizado com sucesso.",
+                duration: 3000
+            });
+            toast.present();
+            console.log("success");
+        });
+    };
+    LembretesProvider.prototype.getLembretes = function () {
+        return this.db.list('/lembretes', function (ref) { return ref.orderByChild('id_lembrete').equalTo(1); });
+    };
+    LembretesProvider = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["A" /* Injectable */])(),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_4_angularfire2_database__["a" /* AngularFireDatabase */],
+            __WEBPACK_IMPORTED_MODULE_3_angularfire2__["b" /* FirebaseApp */],
+            __WEBPACK_IMPORTED_MODULE_0__angular_common_http__["a" /* HttpClient */],
+            __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["i" /* ToastController */]])
+    ], LembretesProvider);
+    return LembretesProvider;
+}());
+
+//# sourceMappingURL=lembretes.js.map
 
 /***/ }),
 
@@ -1220,9 +1268,43 @@ module.exports = webpackAsyncContext;
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CartaoPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+/**
+ * Generated class for the CartaoPage page.
+ *
+ * See https://ionicframework.com/docs/components/#navigation for more info on
+ * Ionic pages and navigation.
+ */
+var CartaoPage = /** @class */ (function () {
+    function CartaoPage() {
+    }
+    CartaoPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-cartao',template:/*ion-inline-start:"c:\mobile\projetoNanny\src\pages\cartao\cartao.html"*/'<!--\n  Generated template for the CartaoPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>Cartao de Vacinas</ion-title>\n  </ion-navbar>\n\n  <ion-content padding>\n    <ion-item>\n      <ion-label floating>Dependente</ion-label>\n      <ion-select [(ngModel)]="lembrete.id_dependete">\n            <ion-option *ngFor="let dependente of dependentes | async" value="{{dependente.key}}">{{dependente.nome}}</ion-option>\n      </ion-select>\n    </ion-item>\n    <ion-item>\n      <ion-label floating>Título</ion-label>\n      <ion-input type="text" [(ngModel)]="cartao.titulo" required></ion-input>\n    </ion-item>\n    <ion-item>\n      <ion-label stacked>Data</ion-label>\n      <ion-input type="date" displayFormat="mm/dd/yyyy" pickerFormat="MMMM YYYY" [(ngModel)]="cartao.data"></ion-input>\n    </ion-item>\n    <ion-item>\n      <ion-label floating>Local</ion-label>\n      <ion-input type="text" [(ngModel)]="cartao.local" required></ion-input>\n    </ion-item>\n    <ion-item>\n      <ion-label stacked>Validade</ion-label>\n      <ion-input type="date" displayFormat="mm/dd/yyyy" pickerFormat="MMMM YYYY" [(ngModel)]="cartao.validade"></ion-input>\n    </ion-item>\n\n    <button class="button button-positive button-block" type="submit" ng-disabled="contato.$invalid">Salvar</button>\n    <button ion-button (click)="save(cartao)">Cadastrar</button>\n    </ion-content>\n'/*ion-inline-end:"c:\mobile\projetoNanny\src\pages\cartao\cartao.html"*/,
+        })
+    ], CartaoPage);
+    return CartaoPage;
+}());
+
+//# sourceMappingURL=cartao.js.map
+
+/***/ }),
+
+/***/ 603:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(603);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__(607);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(604);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__(608);
 
 
 Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* platformBrowserDynamic */])().bootstrapModule(__WEBPACK_IMPORTED_MODULE_1__app_module__["a" /* AppModule */]);
@@ -1230,13 +1312,13 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 
 /***/ }),
 
-/***/ 607:
+/***/ 608:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_http__ = __webpack_require__(130);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common_http__ = __webpack_require__(94);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_http__ = __webpack_require__(131);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common_http__ = __webpack_require__(68);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_platform_browser__ = __webpack_require__(51);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_ionic_angular__ = __webpack_require__(21);
@@ -1245,27 +1327,31 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_angularfire2__ = __webpack_require__(41);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_angularfire2_database__ = __webpack_require__(60);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_angularfire2_auth__ = __webpack_require__(62);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__environments_environment__ = __webpack_require__(1007);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__app_component__ = __webpack_require__(1008);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__environments_environment__ = __webpack_require__(1008);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__app_component__ = __webpack_require__(1009);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pages_home_home__ = __webpack_require__(193);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__pages_login_login__ = __webpack_require__(220);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__pages_cadastro_cadastro__ = __webpack_require__(217);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__pages_perfil_usuario_perfil_usuario__ = __webpack_require__(221);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__pages_lembretes_lembretes__ = __webpack_require__(218);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__pages_lista_dependentes_lista_dependentes__ = __webpack_require__(219);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__pages_cadastro_lembretes_cadastro_lembretes__ = __webpack_require__(216);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__pages_cadastro_dependente_dependente__ = __webpack_require__(125);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__providers_dependente_dependente__ = __webpack_require__(88);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__providers_usuario_usuario__ = __webpack_require__(118);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__providers_lembretes_lembretes__ = __webpack_require__(185);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__providers_cadastro_lembretes_cadastro_lembretes__ = __webpack_require__(1009);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__providers_auth_auth__ = __webpack_require__(186);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__pages_login_login__ = __webpack_require__(219);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__pages_cadastro_cadastro__ = __webpack_require__(216);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__pages_perfil_usuario_perfil_usuario__ = __webpack_require__(220);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__pages_lembretes_lembretes__ = __webpack_require__(217);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__pages_cartao_cartao__ = __webpack_require__(602);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__pages_lista_dependentes_lista_dependentes__ = __webpack_require__(218);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__pages_cadastro_lembretes_cadastro_lembretes__ = __webpack_require__(126);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__pages_cadastro_dependente_dependente__ = __webpack_require__(125);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__providers_dependente_dependente__ = __webpack_require__(89);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__providers_usuario_usuario__ = __webpack_require__(118);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__providers_lembretes_lembretes__ = __webpack_require__(545);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__providers_cadastro_lembretes_cadastro_lembretes__ = __webpack_require__(1010);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__providers_auth_auth__ = __webpack_require__(186);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__providers_cartao_cartao__ = __webpack_require__(1011);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
+
 
 
 
@@ -1302,10 +1388,11 @@ var AppModule = /** @class */ (function () {
                 __WEBPACK_IMPORTED_MODULE_13__pages_login_login__["a" /* LoginPage */],
                 __WEBPACK_IMPORTED_MODULE_14__pages_cadastro_cadastro__["a" /* CadastroPage */],
                 __WEBPACK_IMPORTED_MODULE_15__pages_perfil_usuario_perfil_usuario__["a" /* PerfilUsuarioPage */],
-                __WEBPACK_IMPORTED_MODULE_17__pages_lista_dependentes_lista_dependentes__["a" /* ListaDependentesPage */],
+                __WEBPACK_IMPORTED_MODULE_18__pages_lista_dependentes_lista_dependentes__["a" /* ListaDependentesPage */],
                 __WEBPACK_IMPORTED_MODULE_16__pages_lembretes_lembretes__["a" /* LembretesPage */],
-                __WEBPACK_IMPORTED_MODULE_18__pages_cadastro_lembretes_cadastro_lembretes__["a" /* CadastroLembretesPage */],
-                __WEBPACK_IMPORTED_MODULE_19__pages_cadastro_dependente_dependente__["a" /* DependentePage */]
+                __WEBPACK_IMPORTED_MODULE_19__pages_cadastro_lembretes_cadastro_lembretes__["a" /* CadastroLembretesPage */],
+                __WEBPACK_IMPORTED_MODULE_20__pages_cadastro_dependente_dependente__["a" /* DependentePage */],
+                __WEBPACK_IMPORTED_MODULE_17__pages_cartao_cartao__["a" /* CartaoPage */]
             ],
             imports: [
                 __WEBPACK_IMPORTED_MODULE_2__angular_platform_browser__["a" /* BrowserModule */],
@@ -1318,10 +1405,11 @@ var AppModule = /** @class */ (function () {
                         { loadChildren: '../pages/cadastro-dependente/dependente.module#DependentePageModule', name: 'DependentePage', segment: 'dependente', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/cadastro-lembretes/cadastro-lembretes.module#CadastroLembretesPageModule', name: 'CadastroLembretesPage', segment: 'cadastro-lembretes', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/cadastro/cadastro.module#CadastroPageModule', name: 'CadastroPage', segment: 'cadastro', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/cartao/cartao.module#CartaoPageModule', name: 'CartaoPage', segment: 'cartao', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/lembretes/lembretes.module#LembretesPageModule', name: 'LembretesPage', segment: 'lembretes', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/lista-dependentes/lista-dependentes.module#ListaDependentesPageModule', name: 'ListaDependentesPage', segment: 'lista-dependentes', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/login/login.module#LoginPageModule', name: 'LoginPage', segment: 'login', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/pagina-dependente/pagina-dependente.module#PaginaDependentePageModule', name: 'PaginaDependentePage', segment: 'pagina-dependente', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/login/login.module#LoginPageModule', name: 'LoginPage', segment: 'login', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/perfil-usuario/perfil-usuario.module#PerfilUsuarioPageModule', name: 'PerfilUsuarioPage', segment: 'perfil-usuario', priority: 'low', defaultHistory: [] }
                     ]
                 }),
@@ -1336,20 +1424,22 @@ var AppModule = /** @class */ (function () {
                 __WEBPACK_IMPORTED_MODULE_13__pages_login_login__["a" /* LoginPage */],
                 __WEBPACK_IMPORTED_MODULE_14__pages_cadastro_cadastro__["a" /* CadastroPage */],
                 __WEBPACK_IMPORTED_MODULE_15__pages_perfil_usuario_perfil_usuario__["a" /* PerfilUsuarioPage */],
-                __WEBPACK_IMPORTED_MODULE_17__pages_lista_dependentes_lista_dependentes__["a" /* ListaDependentesPage */],
+                __WEBPACK_IMPORTED_MODULE_18__pages_lista_dependentes_lista_dependentes__["a" /* ListaDependentesPage */],
                 __WEBPACK_IMPORTED_MODULE_16__pages_lembretes_lembretes__["a" /* LembretesPage */],
-                __WEBPACK_IMPORTED_MODULE_18__pages_cadastro_lembretes_cadastro_lembretes__["a" /* CadastroLembretesPage */],
-                __WEBPACK_IMPORTED_MODULE_19__pages_cadastro_dependente_dependente__["a" /* DependentePage */]
+                __WEBPACK_IMPORTED_MODULE_19__pages_cadastro_lembretes_cadastro_lembretes__["a" /* CadastroLembretesPage */],
+                __WEBPACK_IMPORTED_MODULE_20__pages_cadastro_dependente_dependente__["a" /* DependentePage */],
+                __WEBPACK_IMPORTED_MODULE_17__pages_cartao_cartao__["a" /* CartaoPage */]
             ],
             providers: [
                 __WEBPACK_IMPORTED_MODULE_6__ionic_native_status_bar__["a" /* StatusBar */],
                 __WEBPACK_IMPORTED_MODULE_5__ionic_native_splash_screen__["a" /* SplashScreen */],
                 { provide: __WEBPACK_IMPORTED_MODULE_3__angular_core__["u" /* ErrorHandler */], useClass: __WEBPACK_IMPORTED_MODULE_4_ionic_angular__["c" /* IonicErrorHandler */] },
-                __WEBPACK_IMPORTED_MODULE_20__providers_dependente_dependente__["a" /* DependenteProvider */],
-                __WEBPACK_IMPORTED_MODULE_21__providers_usuario_usuario__["a" /* UsuarioProvider */],
-                __WEBPACK_IMPORTED_MODULE_22__providers_lembretes_lembretes__["a" /* LembretesProvider */],
-                __WEBPACK_IMPORTED_MODULE_24__providers_auth_auth__["a" /* AuthProvider */],
-                __WEBPACK_IMPORTED_MODULE_23__providers_cadastro_lembretes_cadastro_lembretes__["a" /* CadastroLembretesProvider */]
+                __WEBPACK_IMPORTED_MODULE_21__providers_dependente_dependente__["a" /* DependenteProvider */],
+                __WEBPACK_IMPORTED_MODULE_22__providers_usuario_usuario__["a" /* UsuarioProvider */],
+                __WEBPACK_IMPORTED_MODULE_23__providers_lembretes_lembretes__["a" /* LembretesProvider */],
+                __WEBPACK_IMPORTED_MODULE_25__providers_auth_auth__["a" /* AuthProvider */],
+                __WEBPACK_IMPORTED_MODULE_24__providers_cadastro_lembretes_cadastro_lembretes__["a" /* CadastroLembretesProvider */],
+                __WEBPACK_IMPORTED_MODULE_26__providers_cartao_cartao__["a" /* CartaoProvider */]
             ]
         })
     ], AppModule);
@@ -1360,19 +1450,19 @@ var AppModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 88:
+/***/ 89:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DependenteProvider; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(130);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(131);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_angularfire2__ = __webpack_require__(41);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_angularfire2_database__ = __webpack_require__(60);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_firebase_app__ = __webpack_require__(110);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_firebase_app___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_firebase_app__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_ionic_angular__ = __webpack_require__(21);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_ionic_native__ = __webpack_require__(326);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_ionic_native__ = __webpack_require__(325);
 var __assign = (this && this.__assign) || Object.assign || function(t) {
     for (var s, i = 1, n = arguments.length; i < n; i++) {
         s = arguments[i];
@@ -1526,5 +1616,5 @@ var DependenteProvider = /** @class */ (function () {
 
 /***/ })
 
-},[602]);
+},[603]);
 //# sourceMappingURL=main.js.map
