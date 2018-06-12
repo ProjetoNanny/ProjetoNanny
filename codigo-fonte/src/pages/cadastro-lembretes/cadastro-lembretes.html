@@ -1,11 +1,6 @@
 <ion-header>
   <ion-navbar color="primary">
-    <div *ngIf="lembrete.titulo == null">
-    <ion-title>Cadastrar Lembretes</ion-title>
-  </div>
-  <div *ngElse>
-  <ion-title>Atualizar Lembretes</ion-title>
-</div>
+    <ion-title >{{lembrete.key == null ? 'Cadastrar Lembrete' : 'Editar Lembrete' }}</ion-title>
   </ion-navbar>
 </ion-header>
 
@@ -44,5 +39,5 @@
     <ion-input type="text" [(ngModel)]="lembrete.anotacoes"></ion-input>
   </ion-item>
   <button class="button button-positive button-block" type="submit" ng-disabled="contato.$invalid">Salvar</button>
-  <button ion-button (click)="save(lembrete)">Cadastrar</button>
+  <button ion-button (click)="lembrete.key == null ? save(lembrete) : edit(lembrete)">Gravar</button>
   </ion-content>

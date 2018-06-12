@@ -32,6 +32,25 @@ export class CadastroLembretesPage {
       this.navCtrl.popToRoot();
 
   }
+
+  edit (lembretes: Lembretes) {
+    console.log('lembretes:' + lembretes);
+    let resposta = this.lembretesProvider.editar(lembretes);
+    if(resposta)
+      this.navCtrl.popToRoot();
+  }
+
+  obterTitulo (lembretes: Lembretes) {
+    if(lembretes.titulo === ''){
+      return "q";
+    }else{
+      return "a";
+    }
+    let toast = this.toastCtrl.create({
+      message: "qqqq",
+      duration: 3000
+    });
+  }
   //ionViewDidLoad() {
     //console.log('ionViewDidLoad CadastroLembretesPage');
   //}

@@ -2,7 +2,6 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { Cartao } from '../../models/cartao';
 import { DependenteProvider } from '../../providers/dependente/dependente';
-import { CartaoProvider } from '../../providers/cartao/cartao';
 
 /**
  * Generated class for the CartaoPage page.
@@ -61,4 +60,3 @@ export class CartaoPage {
 
 }
 }
-

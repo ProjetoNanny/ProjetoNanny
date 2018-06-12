@@ -36,6 +36,21 @@ export class LembretesProvider {
         ref => ref.orderByChild('id_lembrete').equalTo(1));
     }
 
+    editar(lembretes: Lembretes){
+      //lembretes.id_dependente = ;
+      lembretes.id_usuario = firebase.auth().currentUser.uid;
+      console.log(lembretes);
+      return this.lembretesList.update(lembretes.key,lembretes)
+      .then(resolve => {
+        let toast = this.toastCtrl.create({
+          message: "Edição realizada com sucesso.",
+          duration: 3000
+        });
+        toast.present();
+        console.log("success");
+      });
+    }
+
     // remove(lembretes: Lembretes) {
     //     return this.db.list('lembretes/').remove(lembretes);
     // }

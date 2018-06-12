@@ -35,9 +35,10 @@ export class LembretesPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad LembretesPage');
   }
-    editar(lembrete: Lembretes) {
+
+  editar(lembrete: Lembretes) {
       this.navCtrl.push(CadastroLembretesPage, { lembrete: lembrete });
-    }
+  }
 
   remove(lembretes: Lembretes) {
       return this.db.list(this.PATH).remove(lembretes.key)
