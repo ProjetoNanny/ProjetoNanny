@@ -7,7 +7,39 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>Cartao de Vacinas</ion-title>
+    <ion-title>Cartao de Vacina</ion-title>
   </ion-navbar>
-  
+
 </ion-header>
+
+
+<ion-content padding>
+   
+  <ion-item>
+    <ion-label floating>Título</ion-label>
+    <ion-input type="text" [(ngModel)]="cartao.titulo" required></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label stacked>Data</ion-label>
+    <ion-input type="date" displayFormat="mm/dd/yyyy" pickerFormat="MMMM YYYY" [(ngModel)]="cartao.data"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label floating>Local</ion-label>
+    <ion-input type="text" [(ngModel)]="cartao.local"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label floating>Lote</ion-label>
+    <ion-input type="text" [(ngModel)]="cartao.lote"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label stacked>Validade</ion-label>
+    <ion-input type="date" displayFormat="mm/dd/yyyy" pickerFormat="MMMM YYYY" [(ngModel)]="cartao.validade"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label floating>Laboratorio</ion-label>
+    <ion-input type="text" [(ngModel)]="cartao.laboratorio"></ion-input>
+  </ion-item>
+  
+  <button ion-button (click)="save(cartao)">Salvar</button>
+  <button ion-button (click)="excluir(cartao)" color="danger">Excluir</button>
+</ion-content>
