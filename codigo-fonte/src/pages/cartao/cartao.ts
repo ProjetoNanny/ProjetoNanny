@@ -1,7 +1,12 @@
+import { CartaoProvider } from './../../providers/cartao/cartao';
+import { Cartao } from './../../models/cartao';
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { Cartao } from '../../models/cartao';
 import { DependenteProvider } from '../../providers/dependente/dependente';
+import { FormGroup } from '@angular/forms';
+import { Observable } from 'rxjs/Observable';
+
+
 
 /**
  * Generated class for the CartaoPage page.
@@ -18,21 +23,30 @@ import { DependenteProvider } from '../../providers/dependente/dependente';
 export class CartaoPage {
 
   alertCtrl: any;
-  CartaoProvider: any;
-
+  form: FormGroup;
   cartao = {} as Cartao;
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
-  }
+  Cartao: Observable<any>;
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad CartaoPage');
+   constructor(private CartaoProvider: CartaoProvider,
+    public navCtrl: NavController, public navParams: NavParams,
+    public cartaoProvider: CartaoProvider) {
+      this.cartao = navParams.get("cartao") || {};
+      console.log(this.cartao);
   }
-
 
   save (cartao: Cartao){
+    console.log('cartao:' + cartao);
     let resposta = this.CartaoProvider.salvar(cartao);
     if(resposta)
-        this.navCtrl.popToRoot();
+      this.navCtrl.popToRoot();
+
+  }
+
+  edit (cartao: Cartao) {
+    console.log('cartao:' + cartao);
+    let resposta = this.CartaoProvider.editar(cartao);
+    if(resposta)
+      this.navCtrl.popToRoot();
   }
 
   excluir (cartao: CartaoPage){

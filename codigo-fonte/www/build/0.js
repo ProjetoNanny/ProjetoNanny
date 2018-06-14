@@ -1,13 +1,13 @@
 webpackJsonp([0],{
 
-/***/ 1017:
+/***/ 1019:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PaginaDependentePageModule", function() { return PaginaDependentePageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(21);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(17);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__pagina_dependente__ = __webpack_require__(1021);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -44,9 +44,9 @@ var PaginaDependentePageModule = /** @class */ (function () {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PaginaDependentePage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(21);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__pages_cadastro_dependente_dependente__ = __webpack_require__(125);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_dependente_dependente__ = __webpack_require__(89);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(17);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__pages_cadastro_dependente_dependente__ = __webpack_require__(126);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_dependente_dependente__ = __webpack_require__(88);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -91,7 +91,7 @@ var PaginaDependentePage = /** @class */ (function () {
     };
     PaginaDependentePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-pagina-dependente',template:/*ion-inline-start:"c:\mobile\projetoNanny\src\pages\pagina-dependente\pagina-dependente.html"*/'<!--\n  Generated template for the PaginaDependentePage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>{{dependente.nome}}</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n  <div *ngIf="dependente.foto_perfil == null">\n    <img src="https://ih1.redbubble.net/image.445781365.8284/flat,800x800,075,f.u2.jpg" (click)="editarDependente(dependente)"/>\n  </div>\n  <div *ngIf="dependente.foto_perfil != null">\n    <img src="{{dependente.foto_perfil}}" (click)="editarDependente()"/>\n  </div>\n    <h1 >{{ dependente.nome }}</h1>\n</ion-content>\n'/*ion-inline-end:"c:\mobile\projetoNanny\src\pages\pagina-dependente\pagina-dependente.html"*/,
+            selector: 'page-pagina-dependente',template:/*ion-inline-start:"C:\Users\Júlio César\Desktop\Projeto Integrador\Projeto Nanny\projnanny\src\pages\pagina-dependente\pagina-dependente.html"*/'<!--\n  Generated template for the PaginaDependentePage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>{{dependente.nome}}</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n  <div *ngIf="dependente.foto_perfil == null">\n    <img src="https://ih1.redbubble.net/image.445781365.8284/flat,800x800,075,f.u2.jpg" (click)="editarDependente(dependente)"/>\n  </div>\n  <div *ngIf="dependente.foto_perfil != null">\n    <img src="{{dependente.foto_perfil}}" (click)="editarDependente()"/>\n  </div>\n    <h1 >{{ dependente.nome }}</h1>\n</ion-content>\n'/*ion-inline-end:"C:\Users\Júlio César\Desktop\Projeto Integrador\Projeto Nanny\projnanny\src\pages\pagina-dependente\pagina-dependente.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */],

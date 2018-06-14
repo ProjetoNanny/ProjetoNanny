@@ -12,6 +12,7 @@ import { Observable } from 'rxjs/Observable';
   templateUrl: 'cadastro-lembretes.html',
 })
 export class CadastroLembretesPage {
+  toastCtrl: any;
     form: FormGroup;
     lembrete = {} as Lembretes;
     dependentes: Observable<any>;
