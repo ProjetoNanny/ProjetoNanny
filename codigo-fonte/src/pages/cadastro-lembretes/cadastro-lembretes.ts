@@ -41,17 +41,18 @@ export class CadastroLembretesPage {
       this.navCtrl.popToRoot();
   }
 
-  obterTitulo (lembretes: Lembretes) {
-    if(lembretes.titulo === ''){
-      return "q";
-    }else{
-      return "a";
-    }
-    let toast = this.toastCtrl.create({
-      message: "qqqq",
-      duration: 3000
-    });
-  }
+  // obterTitulo (lembretes: Lembretes) {
+  //   if(lembretes.titulo === ''){
+  //     return "q";
+  //   }else{
+  //     return "a";
+  //   }
+  //   let toast = this.toastCtrl.create({
+  //     message: "qqqq",
+  //     duration: 3000
+  //   });
+  // }
+  
   //ionViewDidLoad() {
     //console.log('ionViewDidLoad CadastroLembretesPage');
   //}

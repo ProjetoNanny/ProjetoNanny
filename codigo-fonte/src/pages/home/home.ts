@@ -3,6 +3,7 @@ import { NavController } from 'ionic-angular';
 import { PerfilUsuarioPage } from '../perfil-usuario/perfil-usuario';
 import { DependentePage } from '../cadastro-dependente/dependente';
 import { LembretesPage } from '../lembretes/lembretes';
+import { HelpPage } from '../help/help';
 import { CartaoPage} from '../cartao/cartao';
 import { CadastroLembretesPage} from '../cadastro-lembretes/cadastro-lembretes';
 import { UsuarioProvider } from '../../providers/usuario/usuario';
@@ -57,6 +58,10 @@ export class HomePage {
 
   async pushCartao(){
     this.navCtrl.push(CartaoPage);
+  }
+
+  async pushHelp(){
+    this.navCtrl.push(HelpPage);
   }
 
   async pushUsuario(){
