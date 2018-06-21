@@ -15,7 +15,6 @@ import { LoginPage } from '../pages/login/login';
 import { CadastroPage } from '../pages/cadastro/cadastro';
 import { PerfilUsuarioPage } from '../pages/perfil-usuario/perfil-usuario';
 import { LembretesPage } from '../pages/lembretes/lembretes';
-import { CartaoPage } from '../pages/cartao/cartao';
 import { ListaDependentesPage } from '../pages/lista-dependentes/lista-dependentes';
 import { CadastroLembretesPage } from '../pages/cadastro-lembretes/cadastro-lembretes';
 import { DependentePage } from '../pages/cadastro-dependente/dependente';
@@ -26,7 +25,6 @@ import { LembretesProvider } from '../providers/lembretes/lembretes';
 import { CadastroLembretesProvider } from '../providers/cadastro-lembretes/cadastro-lembretes';
 import { AuthProvider } from '../providers/auth/auth';
 import { HelpProvider } from '../providers/help/help';
-import { CartaoProvider } from '../providers/cartao/cartao';
 
 @NgModule({
   declarations: [
@@ -39,8 +37,7 @@ import { CartaoProvider } from '../providers/cartao/cartao';
     LembretesPage,
     CadastroLembretesPage,
     DependentePage,
-    HelpPage,
-    CartaoPage
+    HelpPage
   ],
   imports: [
     BrowserModule,
@@ -64,8 +61,7 @@ import { CartaoProvider } from '../providers/cartao/cartao';
     LembretesPage,
     CadastroLembretesPage,
     DependentePage,
-    HelpPage,
-    CartaoPage
+    HelpPage
   ],
   providers: [
     StatusBar,
@@ -76,8 +72,7 @@ import { CartaoProvider } from '../providers/cartao/cartao';
     LembretesProvider,
     AuthProvider,
     CadastroLembretesProvider,
-    HelpProvider,
-    CartaoProvider
+    HelpProvider
   ]
 })
 export class AppModule {}
