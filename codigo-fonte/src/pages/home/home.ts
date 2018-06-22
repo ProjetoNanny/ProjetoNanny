@@ -55,10 +55,6 @@ export class HomePage {
     this.navCtrl.push(DependentePage);
   }
 
-  async pushCartao(){
-    this.navCtrl.push(CartaoPage);
-  }
-
   async pushHelp(){
     this.navCtrl.push(HelpPage);
   }

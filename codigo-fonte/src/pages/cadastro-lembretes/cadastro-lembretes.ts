@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, ToastController } from 'ionic-angular';
 import { Lembretes } from '../../models/lembretes';
 import { LembretesProvider } from '../../providers/lembretes/lembretes';
 import { DependenteProvider } from '../../providers/dependente/dependente';
@@ -12,12 +12,13 @@ import { Observable } from 'rxjs/Observable';
   templateUrl: 'cadastro-lembretes.html',
 })
 export class CadastroLembretesPage {
-  toastCtrl: any;
     form: FormGroup;
     lembrete = {} as Lembretes;
     dependentes: Observable<any>;
 
-  constructor(private lembretesProvider: LembretesProvider,
+  constructor(
+    private toastCtrl: ToastController,
+    private lembretesProvider: LembretesProvider,
     public navCtrl: NavController, public navParams: NavParams,
     public dependenteProvider: DependenteProvider) {
       this.lembrete = navParams.get("lembrete") || {};

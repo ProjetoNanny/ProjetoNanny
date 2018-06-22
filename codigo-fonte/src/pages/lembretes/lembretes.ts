@@ -6,6 +6,7 @@ import { CadastroLembretesPage } from '../cadastro-lembretes/cadastro-lembretes'
 import { AngularFireDatabase } from 'angularfire2/database';
 import { Observable } from 'rxjs/Observable';
 import firebase from 'firebase';
+import { LembretesProvider } from '../../providers/lembretes/lembretes';
 
 @IonicPage()
 @Component({
@@ -18,10 +19,12 @@ export class LembretesPage {
   constructor(public navCtrl: NavController,
     public navParams: NavParams,
     private db: AngularFireDatabase,
-    public toastCtrl: ToastController
-  ) {
-      this.lembretes = this.getAll();
-  }
+    public toastCtrl: ToastController,
+    params: NavParams,
+    lembretesProvider: LembretesProvider
+  ) {   
+        this.lembretes = lembretesProvider.getAll();
+    }
 
   getAll(){
     return this.db.list(this.PATH, ref => ref.orderByChild("id_usuario")
@@ -35,7 +38,6 @@ export class LembretesPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad LembretesPage');
   }
-
   editar(lembrete: Lembretes) {
       this.navCtrl.push(CadastroLembretesPage, { lembrete: lembrete });
   }

@@ -1,3 +1,10 @@
 page-pagina-dependente {
-
+    ion-tabs{
+        position: relative;
+        .tabbar{
+            position: relative;
+            opacity: 1;
+            bottom: auto;
+        }
+    }
 }

@@ -21,4 +21,8 @@
     <img src="{{dependente.foto_perfil}}" (click)="editarDependente()"/>
   </div>
     <h1 >{{ dependente.nome }}</h1>
-</ion-content>
+    <ion-tabs selectedIndex="0">
+      <ion-tab [root]="lembreteLista" tabIcon="list" [rootParams]="dependente.key"></ion-tab>
+      <ion-tab [root]="informativosLista" tabIcon="book" [rootParams]="dependente.data_nasc"></ion-tab>
+    </ion-tabs>
+  </ion-content>

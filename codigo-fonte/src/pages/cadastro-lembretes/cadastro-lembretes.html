@@ -7,7 +7,7 @@
 <ion-content padding>
   <ion-item>
     <ion-label floating>Dependente</ion-label>
-    <ion-select [(ngModel)]="lembrete.id_dependete">
+    <ion-select [(ngModel)]="lembrete.id_dependente">
           <ion-option *ngFor="let dependente of dependentes | async" value="{{dependente.key}}">{{dependente.nome}}</ion-option>
     </ion-select>
   </ion-item>

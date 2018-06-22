@@ -24,6 +24,9 @@ import { UsuarioProvider } from '../providers/usuario/usuario';
 import { LembretesProvider } from '../providers/lembretes/lembretes';
 import { CadastroLembretesProvider } from '../providers/cadastro-lembretes/cadastro-lembretes';
 import { AuthProvider } from '../providers/auth/auth';
+import { TabDependenteLembretesPage } from '../pages/tab-dependente-lembretes/tab-dependente-lembretes';
+import { TabDependenteAcompanhamentoPage } from '../pages/tab-dependente-acompanhamento/tab-dependente-acompanhamento';
+import { InformativosProvider } from '../providers/informativo/informativo';
 import { HelpProvider } from '../providers/help/help';
 
 @NgModule({
@@ -37,6 +40,8 @@ import { HelpProvider } from '../providers/help/help';
     LembretesPage,
     CadastroLembretesPage,
     DependentePage,
+    TabDependenteLembretesPage,
+    TabDependenteAcompanhamentoPage,
     HelpPage
   ],
   imports: [
@@ -61,6 +66,8 @@ import { HelpProvider } from '../providers/help/help';
     LembretesPage,
     CadastroLembretesPage,
     DependentePage,
+    TabDependenteLembretesPage,
+    TabDependenteAcompanhamentoPage,
     HelpPage
   ],
   providers: [
@@ -72,6 +79,7 @@ import { HelpProvider } from '../providers/help/help';
     LembretesProvider,
     AuthProvider,
     CadastroLembretesProvider,
+    InformativosProvider,
     HelpProvider
   ]
 })
