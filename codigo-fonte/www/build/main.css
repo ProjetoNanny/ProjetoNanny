@@ -25761,3 +25761,13 @@ page-login .logo_login img {
 page-login .login-campos {
   margin-bottom: 50px;
 }
+
+page-pagina-dependente ion-tabs {
+  position: relative;
+}
+
+page-pagina-dependente ion-tabs .tabbar {
+  position: relative;
+  opacity: 1;
+  bottom: auto;
+}

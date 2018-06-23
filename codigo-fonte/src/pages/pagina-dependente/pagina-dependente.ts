@@ -3,6 +3,8 @@ import { Dependente } from './../../models/dependente';
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { DependentePage } from '../../pages/cadastro-dependente/dependente';
+import { LembretePage } from '../../pages/lembretes/lembretes';
+import { CadastroLembretesPage } from '../../pages/cadastro-lembretes/cadastro-lembretes';
 import { DependenteProvider } from '../../providers/dependente/dependente';
 import { Observable } from 'rxjs/Observable';
 import { TabDependenteLembretesPage } from '../tab-dependente-lembretes/tab-dependente-lembretes';
@@ -23,7 +25,7 @@ export class PaginaDependentePage {
   lembreteLista = TabDependenteLembretesPage;
   informativosLista = TabDependenteAcompanhamentoPage;
   lembretes: Observable<any>;
-  
+
   constructor(public navCtrl: NavController,
     public navParams: NavParams,
     public dependenteProvider: DependenteProvider) {
@@ -31,5 +33,8 @@ export class PaginaDependentePage {
   }
   editarDependente() {
     this.navCtrl.push(DependentePage, { dependente: this.dependente });
+  }
+  pushcadastroLembretes() {
+    this.navCtrl.push(CadastroLembretesPage);
   }
 }

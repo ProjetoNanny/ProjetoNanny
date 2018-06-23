@@ -1,6 +1,6 @@
-webpackJsonp([9],{
+webpackJsonp([11],{
 
-/***/ 1008:
+/***/ 1011:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -20,18 +20,18 @@ var environment = {
 
 /***/ }),
 
-/***/ 1009:
+/***/ 1012:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MyApp; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(17);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(602);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(599);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_login_login__ = __webpack_require__(220);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_home_home__ = __webpack_require__(193);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_angularfire2_auth__ = __webpack_require__(62);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(15);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(603);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(600);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_login_login__ = __webpack_require__(221);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_home_home__ = __webpack_require__(194);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_angularfire2_auth__ = __webpack_require__(63);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -72,9 +72,9 @@ var MyApp = /** @class */ (function () {
         });
     }
     MyApp = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"C:\Users\Júlio César\Desktop\Projeto Integrador\Projeto Nanny\projnanny\src\app\app.html"*/'<ion-nav [root]="rootPage"></ion-nav>\n'/*ion-inline-end:"C:\Users\Júlio César\Desktop\Projeto Integrador\Projeto Nanny\projnanny\src\app\app.html"*/
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"c:\mobile\projetoNanny\src\app\app.html"*/'<ion-nav [root]="rootPage"></ion-nav>\n'/*ion-inline-end:"c:\mobile\projetoNanny\src\app\app.html"*/
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* Platform */],
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* Platform */],
             __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */],
             __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */],
             __WEBPACK_IMPORTED_MODULE_6_angularfire2_auth__["a" /* AngularFireAuth */]])
@@ -86,12 +86,12 @@ var MyApp = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 1010:
+/***/ 1013:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CadastroLembretesProvider; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_common_http__ = __webpack_require__(95);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_common_http__ = __webpack_require__(60);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(1);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -120,17 +120,66 @@ var CadastroLembretesProvider = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 1011:
+/***/ 1014:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CartaoProvider; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__models_cartao__ = __webpack_require__(1022);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(94);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_core__ = __webpack_require__(1);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HelpProvider; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_common_http__ = __webpack_require__(60);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(1);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+/*
+  Generated class for the HelpProvider provider.
+
+  See https://angular.io/guide/dependency-injection for more info on providers
+  and Angular DI.
+*/
+var HelpProvider = /** @class */ (function () {
+    function HelpProvider(http) {
+        this.http = http;
+        console.log('Hello HelpProvider Provider');
+    }
+    HelpProvider = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["A" /* Injectable */])(),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__angular_common_http__["a" /* HttpClient */]])
+    ], HelpProvider);
+    return HelpProvider;
+}());
+
+//# sourceMappingURL=help.js.map
+
+/***/ }),
+
+/***/ 119:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LembretesProvider; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_common_http__ = __webpack_require__(60);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(15);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_angularfire2__ = __webpack_require__(39);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_angularfire2_database__ = __webpack_require__(54);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_ionic_angular__ = __webpack_require__(17);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_firebase_app__ = __webpack_require__(83);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_firebase_app___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_firebase_app__);
+var __assign = (this && this.__assign) || Object.assign || function(t) {
+    for (var s, i = 1, n = arguments.length; i < n; i++) {
+        s = arguments[i];
+        for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+            t[p] = s[p];
+    }
+    return t;
+};
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -146,26 +195,22 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-/*
-  Generated class for the CartaoProvider provider.
-
-  See https://angular.io/guide/dependency-injection for more info on providers
-  and Angular DI.
-*/
-var CartaoProvider = /** @class */ (function () {
-    function CartaoProvider(db, firebaseApp, http, toastCtrl) {
+var LembretesProvider = /** @class */ (function () {
+    function LembretesProvider(db, firebaseApp, http, toastCtrl) {
         this.db = db;
         this.firebaseApp = firebaseApp;
         this.http = http;
         this.toastCtrl = toastCtrl;
+        this.PATH = "lembretes/";
+        this.user = __WEBPACK_IMPORTED_MODULE_5_firebase_app__["auth"]().currentUser;
+        this.lembretesList = this.db.list('/lembretes');
     }
-    CartaoProvider.prototype.excluir = function (arg0) {
-        throw new Error("Method not implemented.");
-    };
-    CartaoProvider.prototype.salvar = function (cartao) {
+    LembretesProvider.prototype.salvar = function (lembretes) {
         var _this = this;
-        console.log(__WEBPACK_IMPORTED_MODULE_0__models_cartao__["a" /* Cartao */]);
-        return this.cartaoList.push(__WEBPACK_IMPORTED_MODULE_0__models_cartao__["a" /* Cartao */])
+        //lembretes.id_dependente = ;
+        lembretes.id_usuario = __WEBPACK_IMPORTED_MODULE_5_firebase_app__["auth"]().currentUser.uid;
+        console.log(lembretes);
+        return this.lembretesList.push(lembretes)
             .then(function (resolve) {
             var toast = _this.toastCtrl.create({
                 message: "Cadastro realizado com sucesso.",
@@ -175,63 +220,86 @@ var CartaoProvider = /** @class */ (function () {
             console.log("success");
         });
     };
-    CartaoProvider.prototype.editar = function (cartao) {
+    LembretesProvider.prototype.editar = function (lembretes) {
         var _this = this;
-        console.log(cartao);
-        return this.CartaoList.update(cartao.key, cartao)
+        //lembretes.id_dependente = ;
+        lembretes.id_usuario = __WEBPACK_IMPORTED_MODULE_5_firebase_app__["auth"]().currentUser.uid;
+        console.log(lembretes);
+        return this.lembretesList.update(lembretes.key, lembretes)
             .then(function (resolve) {
             var toast = _this.toastCtrl.create({
-                message: "Edição realizada com sucesso.",
+                message: "Cadastro realizado com sucesso.",
                 duration: 3000
             });
             toast.present();
             console.log("success");
         });
     };
-    CartaoProvider = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_2__angular_core__["A" /* Injectable */])(),
-        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_4_angularfire2_database__["a" /* AngularFireDatabase */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_4_angularfire2_database__["a" /* AngularFireDatabase */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_3_angularfire2__["b" /* FirebaseApp */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3_angularfire2__["b" /* FirebaseApp */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1__angular_http__["a" /* Http */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_http__["a" /* Http */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_5_ionic_angular__["i" /* ToastController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_5_ionic_angular__["i" /* ToastController */]) === "function" && _d || Object])
-    ], CartaoProvider);
-    return CartaoProvider;
-    var _a, _b, _c, _d;
+    LembretesProvider.prototype.getLembretes = function () {
+        return this.db.list('/lembretes', function (ref) { return ref.orderByChild('id_lembrete').equalTo(1); });
+    };
+    LembretesProvider.prototype.getAll = function () {
+        return this.db.list(this.PATH, function (ref) { return ref.orderByChild("id_usuario")
+            .equalTo(__WEBPACK_IMPORTED_MODULE_5_firebase_app__["auth"]().currentUser.uid); })
+            .snapshotChanges()
+            .map(function (changes) {
+            return changes.map(function (c) { return (__assign({ key: c.payload.key }, c.payload.val())); });
+        });
+    };
+    LembretesProvider.prototype.getLembretePorDependente = function (id_dep) {
+        console.log(id_dep);
+        return this.db.list(this.PATH, function (ref) { return ref.orderByChild("id_dependente")
+            .equalTo(id_dep); })
+            .snapshotChanges()
+            .map(function (changes) {
+            return changes.map(function (c) { return (__assign({ key: c.payload.key }, c.payload.val())); });
+        });
+    };
+    LembretesProvider.prototype.remove = function (lembretes) {
+        var _this = this;
+        return this.lembretesList.remove(lembretes.key)
+            .then(function (resolve) {
+            var toast = _this.toastCtrl.create({
+                message: "Lembrete " + lembretes.titulo + " excluido com sucesso.",
+                duration: 3000
+            });
+            toast.present();
+            console.log("success delete");
+        }, function (reject) {
+            var toast = _this.toastCtrl.create({
+                message: "Erro ao excluir o lembrete, por favor, verificar os campos.",
+                duration: 3000
+            });
+        });
+    };
+    LembretesProvider = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["A" /* Injectable */])(),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_4_angularfire2_database__["a" /* AngularFireDatabase */],
+            __WEBPACK_IMPORTED_MODULE_3_angularfire2__["b" /* FirebaseApp */],
+            __WEBPACK_IMPORTED_MODULE_0__angular_common_http__["a" /* HttpClient */],
+            __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["j" /* ToastController */]])
+    ], LembretesProvider);
+    return LembretesProvider;
 }());
 
-//# sourceMappingURL=cartao.js.map
+//# sourceMappingURL=lembretes.js.map
 
 /***/ }),
 
-/***/ 1022:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Cartao; });
-var Cartao = /** @class */ (function () {
-    function Cartao() {
-        this.data = new Date();
-        this.validade = new Date();
-    }
-    return Cartao;
-}());
-
-;
-//# sourceMappingURL=cartao.js.map
-
-/***/ }),
-
-/***/ 119:
+/***/ 120:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return UsuarioProvider; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(94);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(132);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_angularfire2__ = __webpack_require__(39);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_angularfire2_database__ = __webpack_require__(54);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_firebase_app__ = __webpack_require__(111);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_firebase_app__ = __webpack_require__(83);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_firebase_app___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_firebase_app__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_Observable__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_Observable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_rxjs_Observable__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_ionic_angular__ = __webpack_require__(17);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_ionic_angular__ = __webpack_require__(15);
 var __assign = (this && this.__assign) || Object.assign || function(t) {
     for (var s, i = 1, n = arguments.length; i < n; i++) {
         s = arguments[i];
@@ -326,7 +394,7 @@ var UsuarioProvider = /** @class */ (function () {
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_3_angularfire2_database__["a" /* AngularFireDatabase */],
             __WEBPACK_IMPORTED_MODULE_2_angularfire2__["b" /* FirebaseApp */],
             __WEBPACK_IMPORTED_MODULE_1__angular_http__["a" /* Http */],
-            __WEBPACK_IMPORTED_MODULE_6_ionic_angular__["i" /* ToastController */]])
+            __WEBPACK_IMPORTED_MODULE_6_ionic_angular__["j" /* ToastController */]])
     ], UsuarioProvider);
     return UsuarioProvider;
 }());
@@ -335,14 +403,14 @@ var UsuarioProvider = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 126:
+/***/ 127:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DependentePage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(17);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_dependente_dependente__ = __webpack_require__(88);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(15);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_dependente_dependente__ = __webpack_require__(90);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -397,11 +465,11 @@ var DependentePage = /** @class */ (function () {
     };
     DependentePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-dependente',template:/*ion-inline-start:"C:\Users\Júlio César\Desktop\Projeto Integrador\Projeto Nanny\projnanny\src\pages\cadastro-dependente\dependente.html"*/'<ion-header>\n  <ion-navbar color="primary">\n    <ion-title>Dependente</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n  <ion-item>\n    <ion-label floating>Nome</ion-label>\n    <ion-input type="text" [(ngModel)]="dependente.nome" required></ion-input>\n  </ion-item>\n  <ion-item>\n    <ion-label floating>Data de Nascimento</ion-label>\n    <ion-input type="date" [(ngModel)]="dependente.data_nasc"></ion-input>\n  </ion-item>\n  <ion-item>\n    <ion-label floating>Horário</ion-label>\n    <ion-input type="text" [(ngModel)]="dependente.horario"></ion-input>\n  </ion-item>\n  <ion-item>\n    <ion-label floating>Tipo Sanguíneo</ion-label>\n    <ion-input type="text" [(ngModel)]="dependente.tipo_sanguineo"></ion-input>\n  </ion-item>\n  <ion-item>\n    <ion-label floating>Altura</ion-label>\n    <ion-input type="text" [(ngModel)]="dependente.altura"></ion-input>\n  </ion-item>\n  <ion-item>\n    <ion-label floating>Peso</ion-label>\n    <ion-input type="text" [(ngModel)]="dependente.peso"></ion-input>\n  </ion-item>\n  <ion-item>\n    <ion-label floating>Onde estuda?</ion-label>\n    <ion-input type="text" [(ngModel)]="dependente.escola"></ion-input>\n  </ion-item>\n  <ion-item>\n    <ion-label floating>Gênero</ion-label>\n    <ion-input type="text" [(ngModel)]="dependente.genero"></ion-input>\n  </ion-item>\n  <ion-item>\n    <ion-label floating>Personalidade</ion-label>\n    <ion-input type="text" [(ngModel)]="dependente.personalidade"></ion-input>\n  </ion-item>\n  <ion-item>\n    <ion-label floating>Hobbies</ion-label>\n    <ion-input type="text" [(ngModel)]="dependente.hobbies"></ion-input>\n  </ion-item>\n  <button class="button button-positive button-block" type="submit" ng-disabled="contato.$invalid">Salvar</button>\n\n  <button ion-button (click)="save(dependente)">Cadastrar</button>\n  <button ion-button (click)="excluir(dependente)" color="danger">Excluir</button>\n</ion-content>\n'/*ion-inline-end:"C:\Users\Júlio César\Desktop\Projeto Integrador\Projeto Nanny\projnanny\src\pages\cadastro-dependente\dependente.html"*/,
+            selector: 'page-dependente',template:/*ion-inline-start:"c:\mobile\projetoNanny\src\pages\cadastro-dependente\dependente.html"*/'<ion-header>\n  <ion-navbar color="primary">\n    <ion-title>Dependente</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n  <ion-item>\n    <ion-label floating>Nome</ion-label>\n    <ion-input type="text" [(ngModel)]="dependente.nome" required></ion-input>\n  </ion-item>\n  <ion-item>\n    <ion-label floating>Data de Nascimento</ion-label>\n    <ion-input type="date" [(ngModel)]="dependente.data_nasc"></ion-input>\n  </ion-item>\n  <ion-item>\n    <ion-label floating>Horário</ion-label>\n    <ion-input type="text" [(ngModel)]="dependente.horario"></ion-input>\n  </ion-item>\n  <ion-item>\n    <ion-label floating>Tipo Sanguíneo</ion-label>\n    <ion-input type="text" [(ngModel)]="dependente.tipo_sanguineo"></ion-input>\n  </ion-item>\n  <ion-item>\n    <ion-label floating>Altura</ion-label>\n    <ion-input type="text" [(ngModel)]="dependente.altura"></ion-input>\n  </ion-item>\n  <ion-item>\n    <ion-label floating>Peso</ion-label>\n    <ion-input type="text" [(ngModel)]="dependente.peso"></ion-input>\n  </ion-item>\n  <ion-item>\n    <ion-label floating>Onde estuda?</ion-label>\n    <ion-input type="text" [(ngModel)]="dependente.escola"></ion-input>\n  </ion-item>\n  <ion-item>\n    <ion-label floating>Gênero</ion-label>\n    <ion-input type="text" [(ngModel)]="dependente.genero"></ion-input>\n  </ion-item>\n  <ion-item>\n    <ion-label floating>Personalidade</ion-label>\n    <ion-input type="text" [(ngModel)]="dependente.personalidade"></ion-input>\n  </ion-item>\n  <ion-item>\n    <ion-label floating>Hobbies</ion-label>\n    <ion-input type="text" [(ngModel)]="dependente.hobbies"></ion-input>\n  </ion-item>\n  <button class="button button-positive button-block" type="submit" ng-disabled="contato.$invalid">Salvar</button>\n\n  <button ion-button (click)="save(dependente)">Cadastrar</button>\n  <button ion-button (click)="excluir(dependente)" color="danger">Excluir</button>\n</ion-content>\n'/*ion-inline-end:"c:\mobile\projetoNanny\src\pages\cadastro-dependente\dependente.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2__providers_dependente_dependente__["a" /* DependenteProvider */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */]])
     ], DependentePage);
     return DependentePage;
@@ -411,86 +479,14 @@ var DependentePage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 127:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CadastroLembretesPage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(17);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_lembretes_lembretes__ = __webpack_require__(546);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_dependente_dependente__ = __webpack_require__(88);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-
-var CadastroLembretesPage = /** @class */ (function () {
-    function CadastroLembretesPage(lembretesProvider, navCtrl, navParams, dependenteProvider) {
-        this.lembretesProvider = lembretesProvider;
-        this.navCtrl = navCtrl;
-        this.navParams = navParams;
-        this.dependenteProvider = dependenteProvider;
-        this.lembrete = {};
-        this.lembrete = navParams.get("lembrete") || {};
-        console.log(this.lembrete);
-        this.dependentes = dependenteProvider.getAll();
-        console.log(this.dependentes);
-    }
-    CadastroLembretesPage.prototype.save = function (lembretes) {
-        console.log('lembretes:' + lembretes);
-        var resposta = this.lembretesProvider.salvar(lembretes);
-        if (resposta)
-            this.navCtrl.popToRoot();
-    };
-    CadastroLembretesPage.prototype.edit = function (lembretes) {
-        console.log('lembretes:' + lembretes);
-        var resposta = this.lembretesProvider.editar(lembretes);
-        if (resposta)
-            this.navCtrl.popToRoot();
-    };
-    CadastroLembretesPage.prototype.obterTitulo = function (lembretes) {
-        if (lembretes.titulo === '') {
-            return "q";
-        }
-        else {
-            return "a";
-        }
-        var toast = this.toastCtrl.create({
-            message: "qqqq",
-            duration: 3000
-        });
-    };
-    CadastroLembretesPage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-cadastro-lembretes',template:/*ion-inline-start:"C:\Users\Júlio César\Desktop\Projeto Integrador\Projeto Nanny\projnanny\src\pages\cadastro-lembretes\cadastro-lembretes.html"*/'<ion-header>\n  <ion-navbar color="primary">\n    <ion-title >{{lembrete.key == null ? \'Cadastrar Lembrete\' : \'Editar Lembrete\' }}</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n  <ion-item>\n    <ion-label floating>Dependente</ion-label>\n    <ion-select [(ngModel)]="lembrete.id_dependete">\n          <ion-option *ngFor="let dependente of dependentes | async" value="{{dependente.key}}">{{dependente.nome}}</ion-option>\n    </ion-select>\n  </ion-item>\n  <ion-item>\n    <ion-label floating>Título</ion-label>\n    <ion-input type="text" [(ngModel)]="lembrete.titulo" required></ion-input>\n  </ion-item>\n  <ion-item>\n    <ion-label stacked>Data Início</ion-label>\n    <ion-input type="date" displayFormat="mm/dd/yyyy" pickerFormat="MMMM YYYY" [(ngModel)]="lembrete.data_inicial"></ion-input>\n  </ion-item>\n  <ion-item>\n    <ion-label stacked>Data Final</ion-label>\n    <ion-input type="date" [(ngModel)]="lembrete.data_final"></ion-input>\n  </ion-item>\n  <ion-item>\n    <ion-label floating>Repetir todo dia?</ion-label>\n    <ion-select [(ngModel)]="lembrete.repeticao"  >\n      <ion-option value="Sim">Sim</ion-option>\n      <ion-option value="Não">Não</ion-option>\n    </ion-select>\n  </ion-item>\n  <ion-item>\n    <ion-label floating>Localização</ion-label>\n    <ion-input type="text" [(ngModel)]="lembrete.localizacao"></ion-input>\n  </ion-item>\n  <ion-item>\n    <ion-label floating>Anotações</ion-label>\n    <ion-input type="text" [(ngModel)]="lembrete.anotacoes"></ion-input>\n  </ion-item>\n  <button class="button button-positive button-block" type="submit" ng-disabled="contato.$invalid">Salvar</button>\n  <button ion-button (click)="lembrete.key == null ? save(lembrete) : edit(lembrete)">Gravar</button>\n  </ion-content>\n'/*ion-inline-end:"C:\Users\Júlio César\Desktop\Projeto Integrador\Projeto Nanny\projnanny\src\pages\cadastro-lembretes\cadastro-lembretes.html"*/,
-        }),
-        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_2__providers_lembretes_lembretes__["a" /* LembretesProvider */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__providers_lembretes_lembretes__["a" /* LembretesProvider */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_3__providers_dependente_dependente__["a" /* DependenteProvider */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__providers_dependente_dependente__["a" /* DependenteProvider */]) === "function" && _d || Object])
-    ], CadastroLembretesPage);
-    return CadastroLembretesPage;
-    var _a, _b, _c, _d;
-}());
-
-//# sourceMappingURL=cadastro-lembretes.js.map
-
-/***/ }),
-
-/***/ 186:
+/***/ 187:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AuthProvider; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_common_http__ = __webpack_require__(95);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_common_http__ = __webpack_require__(60);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_angularfire2_auth__ = __webpack_require__(62);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_angularfire2_auth__ = __webpack_require__(63);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -523,21 +519,21 @@ var AuthProvider = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 193:
+/***/ 194:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HomePage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(17);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__perfil_usuario_perfil_usuario__ = __webpack_require__(221);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__cadastro_dependente_dependente__ = __webpack_require__(126);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__lembretes_lembretes__ = __webpack_require__(218);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__cartao_cartao__ = __webpack_require__(217);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__cadastro_lembretes_cadastro_lembretes__ = __webpack_require__(127);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__providers_usuario_usuario__ = __webpack_require__(119);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_angularfire2_auth__ = __webpack_require__(62);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__lista_dependentes_lista_dependentes__ = __webpack_require__(219);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(15);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__perfil_usuario_perfil_usuario__ = __webpack_require__(222);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__cadastro_dependente_dependente__ = __webpack_require__(127);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__lembretes_lembretes__ = __webpack_require__(219);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__help_help__ = __webpack_require__(218);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__cadastro_lembretes_cadastro_lembretes__ = __webpack_require__(91);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__providers_usuario_usuario__ = __webpack_require__(120);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_angularfire2_auth__ = __webpack_require__(63);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__lista_dependentes_lista_dependentes__ = __webpack_require__(220);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -637,10 +633,10 @@ var HomePage = /** @class */ (function () {
             });
         });
     };
-    HomePage.prototype.pushCartao = function () {
+    HomePage.prototype.pushHelp = function () {
         return __awaiter(this, void 0, void 0, function () {
             return __generator(this, function (_a) {
-                this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_5__cartao_cartao__["a" /* CartaoPage */]);
+                this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_5__help_help__["a" /* HelpPage */]);
                 return [2 /*return*/];
             });
         });
@@ -683,10 +679,10 @@ var HomePage = /** @class */ (function () {
     };
     HomePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-home',template:/*ion-inline-start:"C:\Users\Júlio César\Desktop\Projeto Integrador\Projeto Nanny\projnanny\src\pages\home\home.html"*/'<ion-header>\n  <ion-item padding>\n    <ion-icon name="help" item-right class="botao_ajuda"></ion-icon>\n  </ion-item>\n</ion-header>\n\n<ion-content padding>\n  <ion-grid>\n    <ion-row>\n      <ion-col col-12 class="centralizado">\n        <img src="{{usuario.foto_perfil}}" class="botao_circulo" (click)="pushUsuario()"/>\n        <h3>{{usuario.nome}}</h3>\n      </ion-col>\n      <ion-col col-6 class="centralizado">\n        <button ion-button color="light" (click)="pushDependente()" class="botao_circulo"><i class="material-icons">group</i></button>\n        <p>Dependentes</p>\n      </ion-col>\n      <ion-col col-6 class="centralizado">\n        <button ion-button color="light" (click)="pushListaDependentes()" class="botao_circulo">Lista de dependentes</button>\n        <p>Lista de Dependentes</p>\n      </ion-col>\n      <ion-col col-6 class="centralizado">\n        <button ion-button color="light" (click)="pushCadastroLembretes()" class="botao_circulo">  <ion-icon name="ios-document-outline"></ion-icon></button>\n        <p>Cadastrar Lembrete</p>\n      </ion-col>\n      <ion-col col-6 class="centralizado">\n        <button ion-button color="light" (click)="pushLembretes()" class="botao_circulo">Todos os Lembretes</button>\n        <p>Listar de Lembretes</p>\n      </ion-col>\n      <ion-col col-6 class="centralizado">\n        <button ion-button color="light" (click)="pushCartao()" class="botao_circulo"><i class="material-icons">group</i></button>\n        <p>Cartao de Vacinas</p>\n      </ion-col>\n      <ion-col col-12 class="centralizado">\n        <button ion-button color="danger" (click)="sair()" class="botao_sair">Sair</button>\n      </ion-col>\n    </ion-row>\n  </ion-grid>\n</ion-content>\n'/*ion-inline-end:"C:\Users\Júlio César\Desktop\Projeto Integrador\Projeto Nanny\projnanny\src\pages\home\home.html"*/
+            selector: 'page-home',template:/*ion-inline-start:"c:\mobile\projetoNanny\src\pages\home\home.html"*/'<ion-header>\n  <ion-item padding>\n    <ion-icon name="help" item-right class="botao_ajuda" (click)="pushHelp()"></ion-icon>\n  </ion-item>\n</ion-header>\n\n<ion-content padding>\n  <ion-grid>\n    <ion-row>\n      <ion-col col-12 class="centralizado">\n        <img src="{{usuario.foto_perfil}}" class="botao_circulo" (click)="pushUsuario()"/>\n        <h3>{{usuario.nome}}</h3>\n      </ion-col>\n      <ion-col col-6 class="centralizado">\n        <button ion-button color="light" (click)="pushDependente()" class="botao_circulo"><i class="material-icons">group</i></button>\n        <p>Dependentes</p>\n      </ion-col>\n      <ion-col col-6 class="centralizado">\n        <button ion-button color="light" (click)="pushListaDependentes()" class="botao_circulo">Lista de dependentes</button>\n        <p>Lista de Dependentes</p>\n      </ion-col>\n      <ion-col col-6 class="centralizado">\n        <button ion-button color="light" (click)="pushCadastroLembretes()" class="botao_circulo">  <ion-icon name="ios-document-outline"></ion-icon></button>\n        <p>Cadastrar Lembrete</p>\n      </ion-col>\n      <ion-col col-6 class="centralizado">\n        <button ion-button color="light" (click)="pushLembretes()" class="botao_circulo">Todos os Lembretes</button>\n        <p>Listar de Lembretes</p>\n      </ion-col>\n      <ion-col col-12 class="centralizado">\n        <button ion-button color="danger" (click)="sair()" class="botao_sair">Sair</button>\n      </ion-col>\n    </ion-row>\n  </ion-grid>\n</ion-content>\n'/*ion-inline-end:"c:\mobile\projetoNanny\src\pages\home\home.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_8_angularfire2_auth__["a" /* AngularFireAuth */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */],
             __WEBPACK_IMPORTED_MODULE_7__providers_usuario_usuario__["a" /* UsuarioProvider */]])
     ], HomePage);
     return HomePage;
@@ -696,16 +692,16 @@ var HomePage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 216:
+/***/ 217:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CadastroPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(17);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_angularfire2_auth__ = __webpack_require__(62);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_usuario_usuario__ = __webpack_require__(119);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__providers_auth_auth__ = __webpack_require__(186);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(15);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_angularfire2_auth__ = __webpack_require__(63);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_usuario_usuario__ = __webpack_require__(120);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__providers_auth_auth__ = __webpack_require__(187);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -780,11 +776,11 @@ var CadastroPage = /** @class */ (function () {
     };
     CadastroPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-cadastro',template:/*ion-inline-start:"C:\Users\Júlio César\Desktop\Projeto Integrador\Projeto Nanny\projnanny\src\pages\cadastro\cadastro.html"*/'<ion-header>\n  <ion-navbar color="primary">\n    <ion-title>Criar conta</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n  <ion-item>\n    <ion-label floating>Email Address</ion-label>\n    <ion-input type="text" [(ngModel)]="user.email"></ion-input>\n  </ion-item>\n\n  <ion-item>\n    <ion-label floating>Password</ion-label>\n    <ion-input type="password" [(ngModel)]="user.password"></ion-input>\n  </ion-item>\n  <ion-item>\n    <ion-label floating>Password</ion-label>\n    <button ion-button color="secondary" type="button" full round large (click)="selectPhoto()">\n      <ion-icon name="md-image"></ion-icon>\n    </button>\n  </ion-item>\n\n  <button ion-button color="light" (click)="register(user)">Register</button>\n</ion-content>\n'/*ion-inline-end:"C:\Users\Júlio César\Desktop\Projeto Integrador\Projeto Nanny\projnanny\src\pages\cadastro\cadastro.html"*/,
+            selector: 'page-cadastro',template:/*ion-inline-start:"c:\mobile\projetoNanny\src\pages\cadastro\cadastro.html"*/'<ion-header>\n  <ion-navbar color="primary">\n    <ion-title>Criar conta</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n  <ion-item>\n    <ion-label floating>Email Address</ion-label>\n    <ion-input type="text" [(ngModel)]="user.email"></ion-input>\n  </ion-item>\n\n  <ion-item>\n    <ion-label floating>Password</ion-label>\n    <ion-input type="password" [(ngModel)]="user.password"></ion-input>\n  </ion-item>\n  <ion-item>\n    <ion-label floating>Password</ion-label>\n    <button ion-button color="secondary" type="button" full round large (click)="selectPhoto()">\n      <ion-icon name="md-image"></ion-icon>\n    </button>\n  </ion-item>\n\n  <button ion-button color="light" (click)="register(user)">Register</button>\n</ion-content>\n'/*ion-inline-end:"c:\mobile\projetoNanny\src\pages\cadastro\cadastro.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2_angularfire2_auth__["a" /* AngularFireAuth */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */],
             __WEBPACK_IMPORTED_MODULE_3__providers_usuario_usuario__["a" /* UsuarioProvider */],
             __WEBPACK_IMPORTED_MODULE_4__providers_auth_auth__["a" /* AuthProvider */]])
     ], CadastroPage);
@@ -795,14 +791,13 @@ var CadastroPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 217:
+/***/ 218:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CartaoPage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__providers_cartao_cartao__ = __webpack_require__(1011);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(17);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HelpPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(15);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -814,84 +809,46 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 
 
-
 /**
- * Generated class for the CartaoPage page.
+ * Generated class for the HelpPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
  */
-var CartaoPage = /** @class */ (function () {
-    function CartaoPage(CartaoProvider, navCtrl, navParams, cartaoProvider) {
-        this.CartaoProvider = CartaoProvider;
+var HelpPage = /** @class */ (function () {
+    function HelpPage(navCtrl, navParams) {
         this.navCtrl = navCtrl;
         this.navParams = navParams;
-        this.cartaoProvider = cartaoProvider;
-        this.cartao = {};
-        this.cartao = navParams.get("cartao") || {};
-        console.log(this.cartao);
     }
-    CartaoPage.prototype.save = function (cartao) {
-        console.log('cartao:' + cartao);
-        var resposta = this.CartaoProvider.salvar(cartao);
-        if (resposta)
-            this.navCtrl.popToRoot();
+    HelpPage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad HelpPage');
     };
-    CartaoPage.prototype.edit = function (cartao) {
-        console.log('cartao:' + cartao);
-        var resposta = this.CartaoProvider.editar(cartao);
-        if (resposta)
-            this.navCtrl.popToRoot();
-    };
-    CartaoPage.prototype.excluir = function (cartao) {
-        var _this = this;
-        var alert = this.alertCtrl.create({
-            title: 'Excluir Cartao',
-            message: 'Você deseja mesmo excluir este Cartao?',
-            buttons: [
-                {
-                    text: 'Cancelar',
-                    role: 'cancel',
-                    handler: function () {
-                        console.log('Cancel clicked');
-                    }
-                },
-                {
-                    text: 'Confirmar',
-                    handler: function () {
-                        var resposta = _this.CartaoProvider.excluir(cartao);
-                        if (resposta)
-                            _this.navCtrl.popToRoot();
-                    }
-                }
-            ]
-        });
-    };
-    CartaoPage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["m" /* Component */])({
-            selector: 'page-cartao',template:/*ion-inline-start:"C:\Users\Júlio César\Desktop\Projeto Integrador\Projeto Nanny\projnanny\src\pages\cartao\cartao.html"*/'<!--\n  Generated template for the CartaoPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>Cartao de Vacina</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n   \n  <ion-item>\n    <ion-label floating>Título</ion-label>\n    <ion-input type="text" [(ngModel)]="cartao.titulo" required></ion-input>\n  </ion-item>\n  <ion-item>\n    <ion-label stacked>Data</ion-label>\n    <ion-input type="date" displayFormat="mm/dd/yyyy" pickerFormat="MMMM YYYY" [(ngModel)]="cartao.data"></ion-input>\n  </ion-item>\n  <ion-item>\n    <ion-label floating>Local</ion-label>\n    <ion-input type="text" [(ngModel)]="cartao.local"></ion-input>\n  </ion-item>\n  <ion-item>\n    <ion-label floating>Lote</ion-label>\n    <ion-input type="text" [(ngModel)]="cartao.lote"></ion-input>\n  </ion-item>\n  <ion-item>\n    <ion-label stacked>Validade</ion-label>\n    <ion-input type="date" displayFormat="mm/dd/yyyy" pickerFormat="MMMM YYYY" [(ngModel)]="cartao.validade"></ion-input>\n  </ion-item>\n  <ion-item>\n    <ion-label floating>Laboratorio</ion-label>\n    <ion-input type="text" [(ngModel)]="cartao.laboratorio"></ion-input>\n  </ion-item>\n  \n  <button class="button button-positive button-block" type="submit" ng-disabled="contato.$invalid">Salvar</button>\n  <button ion-button (click)="cartao.key == null ? save(cartao) : edit(cartao)">Gravar</button>\n\n  <ion-content padding>\n\n  '/*ion-inline-end:"C:\Users\Júlio César\Desktop\Projeto Integrador\Projeto Nanny\projnanny\src\pages\cartao\cartao.html"*/,
+    HelpPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-help',template:/*ion-inline-start:"c:\mobile\projetoNanny\src\pages\help\help.html"*/'<!--\n  Generated template for the HelpPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>Perguntas Frequentes</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n  <ion-grid>\n    <ion-row>\n      <ion-col col-12 class="centralizado">\n        <button ion-button color="light">Sair</button>\n      </ion-col>\n      <ion-col col-12 class="centralizado">\n        <button ion-button color="light">Sair</button>\n      </ion-col>\n    </ion-row>\n  </ion-grid>\n\n</ion-content>\n'/*ion-inline-end:"c:\mobile\projetoNanny\src\pages\help\help.html"*/,
         }),
-        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_0__providers_cartao_cartao__["a" /* CartaoProvider */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__providers_cartao_cartao__["a" /* CartaoProvider */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["f" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["f" /* NavController */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["g" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["g" /* NavParams */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_0__providers_cartao_cartao__["a" /* CartaoProvider */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__providers_cartao_cartao__["a" /* CartaoProvider */]) === "function" && _d || Object])
-    ], CartaoPage);
-    return CartaoPage;
-    var _a, _b, _c, _d;
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */]])
+    ], HelpPage);
+    return HelpPage;
 }());
 
-//# sourceMappingURL=cartao.js.map
+//# sourceMappingURL=help.js.map
 
 /***/ }),
 
-/***/ 218:
+/***/ 219:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LembretesPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(17);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__cadastro_lembretes_cadastro_lembretes__ = __webpack_require__(127);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(15);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__cadastro_lembretes_cadastro_lembretes__ = __webpack_require__(91);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_angularfire2_database__ = __webpack_require__(54);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_firebase__ = __webpack_require__(549);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_firebase___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_firebase__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__providers_lembretes_lembretes__ = __webpack_require__(119);
 var __assign = (this && this.__assign) || Object.assign || function(t) {
     for (var s, i = 1, n = arguments.length; i < n; i++) {
         s = arguments[i];
@@ -915,14 +872,15 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
+
 var LembretesPage = /** @class */ (function () {
-    function LembretesPage(navCtrl, navParams, db, toastCtrl) {
+    function LembretesPage(navCtrl, navParams, db, toastCtrl, params, lembretesProvider) {
         this.navCtrl = navCtrl;
         this.navParams = navParams;
         this.db = db;
         this.toastCtrl = toastCtrl;
         this.PATH = "lembretes/";
-        this.lembretes = this.getAll();
+        this.lembretes = lembretesProvider.getAll();
     }
     LembretesPage.prototype.getAll = function () {
         return this.db.list(this.PATH, function (ref) { return ref.orderByChild("id_usuario")
@@ -952,12 +910,14 @@ var LembretesPage = /** @class */ (function () {
     };
     LembretesPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-lembretes',template:/*ion-inline-start:"C:\Users\Júlio César\Desktop\Projeto Integrador\Projeto Nanny\projnanny\src\pages\lembretes\lembretes.html"*/'<!--\n  Generated template for the LembretesPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>Lembretes</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n  <ion-list>\n    <ion-item-sliding *ngFor="let lembrete of lembretes | async">\n      <ion-item>\n        <h1>{{ lembrete.titulo }}</h1>\n      </ion-item>\n      <ion-item-options side="left">\n        <div *ngIf="lembrete.titulo != null">\n          <button ion-button color="secondary" (click)="editar(lembrete)">\n            <ion-icon name="create"></ion-icon>\n          </button>\n        </div>\n        <button ion-button color="danger" (click)="remove(lembrete)">\n          <ion-icon name="trash"></ion-icon>\n        </button>\n      </ion-item-options>\n    </ion-item-sliding>\n  </ion-list>\n</ion-content>\n'/*ion-inline-end:"C:\Users\Júlio César\Desktop\Projeto Integrador\Projeto Nanny\projnanny\src\pages\lembretes\lembretes.html"*/,
+            selector: 'page-lembretes',template:/*ion-inline-start:"c:\mobile\projetoNanny\src\pages\lembretes\lembretes.html"*/'<!--\n  Generated template for the LembretesPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>Lembretes</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n  <ion-list>\n    <ion-item-sliding *ngFor="let lembrete of lembretes | async">\n      <ion-item>\n        <h1>{{ lembrete.titulo }}</h1>\n      </ion-item>\n      <ion-item-options side="left">\n        <div *ngIf="lembrete.titulo != null">\n          <button ion-button color="secondary" (click)="editar(lembrete)">\n            <ion-icon name="create"></ion-icon>\n          </button>\n        </div>\n        <button ion-button color="danger" (click)="remove(lembrete)">\n          <ion-icon name="trash"></ion-icon>\n        </button>\n      </ion-item-options>\n    </ion-item-sliding>\n  </ion-list>\n</ion-content>\n'/*ion-inline-end:"c:\mobile\projetoNanny\src\pages\lembretes\lembretes.html"*/,
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */],
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */],
             __WEBPACK_IMPORTED_MODULE_3_angularfire2_database__["a" /* AngularFireDatabase */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* ToastController */]])
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* ToastController */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */],
+            __WEBPACK_IMPORTED_MODULE_5__providers_lembretes_lembretes__["a" /* LembretesProvider */]])
     ], LembretesPage);
     return LembretesPage;
 }());
@@ -966,16 +926,16 @@ var LembretesPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 219:
+/***/ 220:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ListaDependentesPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(17);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_dependente_dependente__ = __webpack_require__(88);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(15);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_dependente_dependente__ = __webpack_require__(90);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_angularfire2_database__ = __webpack_require__(54);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__cadastro_dependente_dependente__ = __webpack_require__(126);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__cadastro_dependente_dependente__ = __webpack_require__(127);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1014,10 +974,10 @@ var ListaDependentesPage = /** @class */ (function () {
     };
     ListaDependentesPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-lista-dependentes',template:/*ion-inline-start:"C:\Users\Júlio César\Desktop\Projeto Integrador\Projeto Nanny\projnanny\src\pages\lista-dependentes\lista-dependentes.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-item padding>\n      <ion-title>Dependentes</ion-title>\n      <ion-icon name="help" item-right class="botao_ajuda"></ion-icon>\n    </ion-item>\n  </ion-navbar>\n</ion-header>\n<ion-content padding>\n  <ion-grid>\n    <ion-row>\n      <ion-col *ngFor="let dependente of dependentes | async" col-6>\n        <ion-item (click)="selecionarDependente(dependente)" class="botao_circulo centralizado no-padding">\n          <div *ngIf="dependente.foto_perfil == null">\n            <img src="https://ih1.redbubble.net/image.445781365.8284/flat,800x800,075,f.u2.jpg" />\n          </div>\n          <div *ngIf="dependente.foto_perfil != null">\n            <img src="{{dependente.foto_perfil}}" />\n          </div>\n        </ion-item>\n        <p class="centralizado no-padding">{{ dependente.nome }}</p>\n      </ion-col>\n      <ion-col col-6>\n        <ion-item (click)="adicionarDependente(dependente)" class="botao_circulo centralizado no-padding">\n          <div>\n            <ion-icon name="add" style="font-size:100px;"></ion-icon>\n          </div>\n        </ion-item>\n      </ion-col>\n    </ion-row>\n  </ion-grid>\n</ion-content>\n'/*ion-inline-end:"C:\Users\Júlio César\Desktop\Projeto Integrador\Projeto Nanny\projnanny\src\pages\lista-dependentes\lista-dependentes.html"*/,
+            selector: 'page-lista-dependentes',template:/*ion-inline-start:"c:\mobile\projetoNanny\src\pages\lista-dependentes\lista-dependentes.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-item padding>\n      <ion-title>Dependentes</ion-title>\n      <ion-icon name="help" item-right class="botao_ajuda"></ion-icon>\n    </ion-item>\n  </ion-navbar>\n</ion-header>\n<ion-content padding>\n  <ion-grid>\n    <ion-row>\n      <ion-col *ngFor="let dependente of dependentes | async" col-6>\n        <ion-item (click)="selecionarDependente(dependente)" class="botao_circulo centralizado no-padding">\n          <div *ngIf="dependente.foto_perfil == null">\n            <img src="https://ih1.redbubble.net/image.445781365.8284/flat,800x800,075,f.u2.jpg" />\n          </div>\n          <div *ngIf="dependente.foto_perfil != null">\n            <img src="{{dependente.foto_perfil}}" />\n          </div>\n        </ion-item>\n        <p class="centralizado no-padding">{{ dependente.nome }}</p>\n      </ion-col>\n      <ion-col col-6>\n        <ion-item (click)="adicionarDependente(dependente)" class="botao_circulo centralizado no-padding">\n          <div>\n            <ion-icon name="add" style="font-size:100px;"></ion-icon>\n          </div>\n        </ion-item>\n      </ion-col>\n    </ion-row>\n  </ion-grid>\n</ion-content>\n'/*ion-inline-end:"c:\mobile\projetoNanny\src\pages\lista-dependentes\lista-dependentes.html"*/,
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */],
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */],
             __WEBPACK_IMPORTED_MODULE_3_angularfire2_database__["a" /* AngularFireDatabase */],
             __WEBPACK_IMPORTED_MODULE_2__providers_dependente_dependente__["a" /* DependenteProvider */]])
     ], ListaDependentesPage);
@@ -1028,16 +988,16 @@ var ListaDependentesPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 220:
+/***/ 221:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LoginPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(17);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_angularfire2_auth__ = __webpack_require__(62);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__home_home__ = __webpack_require__(193);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__cadastro_cadastro__ = __webpack_require__(216);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(15);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_angularfire2_auth__ = __webpack_require__(63);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__home_home__ = __webpack_require__(194);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__cadastro_cadastro__ = __webpack_require__(217);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1136,12 +1096,12 @@ var LoginPage = /** @class */ (function () {
     };
     LoginPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-login',template:/*ion-inline-start:"C:\Users\Júlio César\Desktop\Projeto Integrador\Projeto Nanny\projnanny\src\pages\login\login.html"*/'<ion-content padding>\n  <div class="conteudo">\n    <div class="centralizado logo_login">\n      <img src="http://pm1.narvii.com/6686/8a210fa96c69cafcd4f2cb0170d4e30a26e793f0_00.jpg" />\n    </div>\n    <h1 class="centralizado">Nanny</h1>\n    <div class="login-campos">\n      <ion-item>\n        <ion-label floating>E-mail</ion-label>\n        <ion-input type="text" [(ngModel)]="user.email"></ion-input>\n      </ion-item>\n      <ion-item>\n        <ion-label floating>Senha</ion-label>\n        <ion-input type="password" [(ngModel)]="user.password"></ion-input>\n      </ion-item>\n    </div>\n    <div class="login-botoes centralizado">\n      <button class="botao-primario" ion-button (click)="login(user)">Enviar</button>\n      <button class="botao-primario" ion-button color="light" (click)="register(user)">Criar conta</button>\n      <br />\n      <a href="#">Esqueceu a senha?</a>\n    </div>\n  </div>\n</ion-content>\n'/*ion-inline-end:"C:\Users\Júlio César\Desktop\Projeto Integrador\Projeto Nanny\projnanny\src\pages\login\login.html"*/,
+            selector: 'page-login',template:/*ion-inline-start:"c:\mobile\projetoNanny\src\pages\login\login.html"*/'<ion-content padding>\n  <div class="conteudo">\n    <div class="centralizado logo_login">\n      <img src="http://pm1.narvii.com/6686/8a210fa96c69cafcd4f2cb0170d4e30a26e793f0_00.jpg" />\n    </div>\n    <h1 class="centralizado">Nanny</h1>\n    <div class="login-campos">\n      <ion-item>\n        <ion-label floating>E-mail</ion-label>\n        <ion-input type="text" [(ngModel)]="user.email"></ion-input>\n      </ion-item>\n      <ion-item>\n        <ion-label floating>Senha</ion-label>\n        <ion-input type="password" [(ngModel)]="user.password"></ion-input>\n      </ion-item>\n    </div>\n    <div class="login-botoes centralizado">\n      <button class="botao-primario" ion-button (click)="login(user)">Enviar</button>\n      <button class="botao-primario" ion-button color="light" (click)="register(user)">Criar conta</button>\n      <br />\n      <a href="#">Esqueceu a senha?</a>\n    </div>\n  </div>\n</ion-content>\n'/*ion-inline-end:"c:\mobile\projetoNanny\src\pages\login\login.html"*/,
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* ToastController */],
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* ToastController */],
             __WEBPACK_IMPORTED_MODULE_2_angularfire2_auth__["a" /* AngularFireAuth */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]])
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */]])
     ], LoginPage);
     return LoginPage;
 }());
@@ -1150,18 +1110,18 @@ var LoginPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 221:
+/***/ 222:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PerfilUsuarioPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(17);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_usuario_usuario__ = __webpack_require__(119);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ionic_native__ = __webpack_require__(326);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(15);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_usuario_usuario__ = __webpack_require__(120);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ionic_native__ = __webpack_require__(327);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_firebase__ = __webpack_require__(549);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_firebase___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_firebase__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__providers_auth_auth__ = __webpack_require__(186);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__providers_auth_auth__ = __webpack_require__(187);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1277,14 +1237,14 @@ var PerfilUsuarioPage = /** @class */ (function () {
     };
     PerfilUsuarioPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-perfil-usuario',template:/*ion-inline-start:"C:\Users\Júlio César\Desktop\Projeto Integrador\Projeto Nanny\projnanny\src\pages\perfil-usuario\perfil-usuario.html"*/'<ion-header>\n  <ion-navbar color="primary">\n    <ion-title>Usuário</ion-title>\n  </ion-navbar>\n</ion-header>\n<ion-content padding>\n  <ion-item>\n    <ion-row>\n      <ion-col width-50>\n        <button ion-button color="danger" type="button" full round large (click)="takePhoto()">\n                    <ion-icon name="md-camera"></ion-icon>\n                </button>\n      </ion-col>\n      <ion-col width-50>\n        <button ion-button color="secondary" type="button" full round large (click)="selectPhoto()">\n                    <ion-icon name="md-image"></ion-icon>\n                </button>\n      </ion-col>\n    </ion-row>\n  </ion-item>\n  <ion-item>\n    <img class="img-responsive" src="{{ usuario.foto_perfil }}" />\n  </ion-item>\n  <ion-item>\n    <ion-label floating>Nome</ion-label>\n    <ion-input type="text" [(ngModel)]="usuario.nome"></ion-input>\n  </ion-item>\n  <ion-item>\n    <ion-label floating>Data de Nascimento</ion-label>\n    <!-- <ion-input type="date" [(ngModel)]="usuario.data_nasc" placeholder=""></ion-input> -->\n    <ion-datetime displayFormat="MM/DD/YYYY" [(ngModel)]="usuario.data_nasc"></ion-datetime>\n  </ion-item>\n  <ion-item>\n    <ion-label floating>País</ion-label>\n    <ion-input type="text" [(ngModel)]="usuario.pais"></ion-input>\n  </ion-item>\n  <ion-item>\n    <ion-label floating>Cidade</ion-label>\n    <ion-input type="text" [(ngModel)]="usuario.cidade"></ion-input>\n  </ion-item>\n  <button ion-button (click)="save(usuario)">Salvar</button>\n  <button ion-button (click)="excluir(usuario)" color="danger">Excluir</button>\n</ion-content>\n'/*ion-inline-end:"C:\Users\Júlio César\Desktop\Projeto Integrador\Projeto Nanny\projnanny\src\pages\perfil-usuario\perfil-usuario.html"*/,
+            selector: 'page-perfil-usuario',template:/*ion-inline-start:"c:\mobile\projetoNanny\src\pages\perfil-usuario\perfil-usuario.html"*/'<ion-header>\n  <ion-navbar color="primary">\n    <ion-title>Usuário</ion-title>\n  </ion-navbar>\n</ion-header>\n<ion-content padding>\n  <ion-item>\n    <ion-row>\n      <ion-col width-50>\n        <button ion-button color="danger" type="button" full round large (click)="takePhoto()">\n                    <ion-icon name="md-camera"></ion-icon>\n                </button>\n      </ion-col>\n      <ion-col width-50>\n        <button ion-button color="secondary" type="button" full round large (click)="selectPhoto()">\n                    <ion-icon name="md-image"></ion-icon>\n                </button>\n      </ion-col>\n    </ion-row>\n  </ion-item>\n  <ion-item>\n    <img class="img-responsive" src="{{ usuario.foto_perfil }}" />\n  </ion-item>\n  <ion-item>\n    <ion-label floating>Nome</ion-label>\n    <ion-input type="text" [(ngModel)]="usuario.nome"></ion-input>\n  </ion-item>\n  <ion-item>\n    <ion-label floating>Data de Nascimento</ion-label>\n    <!-- <ion-input type="date" [(ngModel)]="usuario.data_nasc" placeholder=""></ion-input> -->\n    <ion-datetime displayFormat="MM/DD/YYYY" [(ngModel)]="usuario.data_nasc"></ion-datetime>\n  </ion-item>\n  <ion-item>\n    <ion-label floating>País</ion-label>\n    <ion-input type="text" [(ngModel)]="usuario.pais"></ion-input>\n  </ion-item>\n  <ion-item>\n    <ion-label floating>Cidade</ion-label>\n    <ion-input type="text" [(ngModel)]="usuario.cidade"></ion-input>\n  </ion-item>\n  <button ion-button (click)="save(usuario)">Salvar</button>\n  <button ion-button (click)="excluir(usuario)" color="danger">Excluir</button>\n</ion-content>\n'/*ion-inline-end:"c:\mobile\projetoNanny\src\pages\perfil-usuario\perfil-usuario.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2__providers_usuario_usuario__["a" /* UsuarioProvider */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */],
             __WEBPACK_IMPORTED_MODULE_5__providers_auth_auth__["a" /* AuthProvider */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* ToastController */]])
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* ToastController */]])
     ], PerfilUsuarioPage);
     return PerfilUsuarioPage;
 }());
@@ -1293,7 +1253,7 @@ var PerfilUsuarioPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 232:
+/***/ 233:
 /***/ (function(module, exports) {
 
 function webpackEmptyAsyncContext(req) {
@@ -1306,48 +1266,56 @@ function webpackEmptyAsyncContext(req) {
 webpackEmptyAsyncContext.keys = function() { return []; };
 webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
 module.exports = webpackEmptyAsyncContext;
-webpackEmptyAsyncContext.id = 232;
+webpackEmptyAsyncContext.id = 233;
 
 /***/ }),
 
-/***/ 278:
+/***/ 279:
 /***/ (function(module, exports, __webpack_require__) {
 
 var map = {
 	"../pages/cadastro-dependente/dependente.module": [
-		1012,
-		8
+		1015,
+		10
 	],
 	"../pages/cadastro-lembretes/cadastro-lembretes.module": [
-		1013,
-		7
+		1016,
+		9
 	],
 	"../pages/cadastro/cadastro.module": [
-		1014,
-		6
+		1017,
+		8
 	],
-	"../pages/cartao/cartao.module": [
-		1015,
-		5
+	"../pages/help/help.module": [
+		1018,
+		7
 	],
 	"../pages/lembretes/lembretes.module": [
-		1016,
-		4
+		1019,
+		6
 	],
 	"../pages/lista-dependentes/lista-dependentes.module": [
-		1017,
-		3
+		1020,
+		5
 	],
 	"../pages/login/login.module": [
-		1018,
-		2
+		1022,
+		4
 	],
 	"../pages/pagina-dependente/pagina-dependente.module": [
-		1019,
+		1021,
 		0
 	],
 	"../pages/perfil-usuario/perfil-usuario.module": [
-		1020,
+		1023,
+		3
+	],
+	"../pages/tab-dependente-acompanhamento/tab-dependente-acompanhamento.module": [
+		1024,
+		2
+	],
+	"../pages/tab-dependente-lembretes/tab-dependente-lembretes.module": [
+		1025,
 		1
 	]
 };
@@ -1362,23 +1330,31 @@ function webpackAsyncContext(req) {
 webpackAsyncContext.keys = function webpackAsyncContextKeys() {
 	return Object.keys(map);
 };
-webpackAsyncContext.id = 278;
+webpackAsyncContext.id = 279;
 module.exports = webpackAsyncContext;
 
 /***/ }),
 
-/***/ 546:
+/***/ 560:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LembretesProvider; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_common_http__ = __webpack_require__(95);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return InformativosProvider; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_common_http__ = __webpack_require__(60);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(17);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(15);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_angularfire2__ = __webpack_require__(39);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_angularfire2_database__ = __webpack_require__(54);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_firebase_app__ = __webpack_require__(111);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_firebase_app__ = __webpack_require__(83);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_firebase_app___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_firebase_app__);
+var __assign = (this && this.__assign) || Object.assign || function(t) {
+    for (var s, i = 1, n = arguments.length; i < n; i++) {
+        s = arguments[i];
+        for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+            t[p] = s[p];
+    }
+    return t;
+};
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1394,69 +1370,212 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-var LembretesProvider = /** @class */ (function () {
-    function LembretesProvider(db, firebaseApp, http, toastCtrl) {
+var InformativosProvider = /** @class */ (function () {
+    function InformativosProvider(db, firebaseApp, http, toastCtrl) {
         this.db = db;
         this.firebaseApp = firebaseApp;
         this.http = http;
         this.toastCtrl = toastCtrl;
-        this.user = __WEBPACK_IMPORTED_MODULE_5_firebase_app__["auth"]().currentUser;
-        this.lembretesList = this.db.list('/lembretes');
+        this.PATH = "Informativos/";
     }
-    LembretesProvider.prototype.salvar = function (lembretes) {
-        var _this = this;
-        //lembretes.id_dependente = ;
-        lembretes.id_usuario = __WEBPACK_IMPORTED_MODULE_5_firebase_app__["auth"]().currentUser.uid;
-        console.log(lembretes);
-        return this.lembretesList.push(lembretes)
-            .then(function (resolve) {
-            var toast = _this.toastCtrl.create({
-                message: "Cadastro realizado com sucesso.",
-                duration: 3000
+    InformativosProvider.prototype.getInformativoPorIdade = function (idade) {
+        console.log(idade);
+        return this.db.list(this.PATH, function (ref) { return ref.orderByChild("idade_min_info")
+            .startAt(idade - 1); })
+            .snapshotChanges()
+            .map(function (changes) {
+            changes.forEach(function (childSnapshot) {
+                var childData = childSnapshot.payload.val();
+                if (childData.idade_max_info <= 4) {
+                    console.log(childData);
+                    changes.pop();
+                }
             });
-            toast.present();
-            console.log("success");
+            return changes.map(function (c) { return (__assign({ key: c.payload.key }, c.payload.val())); });
         });
     };
-    LembretesProvider.prototype.getLembretes = function () {
-        return this.db.list('/lembretes', function (ref) { return ref.orderByChild('id_lembrete').equalTo(1); });
-    };
-    LembretesProvider.prototype.editar = function (lembretes) {
-        var _this = this;
-        //lembretes.id_dependente = ;
-        lembretes.id_usuario = __WEBPACK_IMPORTED_MODULE_5_firebase_app__["auth"]().currentUser.uid;
-        console.log(lembretes);
-        return this.lembretesList.update(lembretes.key, lembretes)
-            .then(function (resolve) {
-            var toast = _this.toastCtrl.create({
-                message: "Edição realizada com sucesso.",
-                duration: 3000
+    InformativosProvider.prototype.getInformativoPorIdade2 = function (idade) {
+        var query = __WEBPACK_IMPORTED_MODULE_5_firebase_app__["database"]().ref(this.PATH).orderByKey();
+        return query.once("value").then(function (snapshot) {
+            snapshot.forEach(function (childSnapshot) {
+                var childData = childSnapshot.val();
+                if (childData.idade_max_info <= 4) {
+                    console.log(childSnapshot);
+                }
             });
-            toast.present();
-            console.log("success");
+        });
+        /*var ref = firebase.database().ref(this.PATH);
+        return ref.orderByChild("idade_min_info").startAt(0).on("child_added", function(snapshot) {
+          var a = snapshot.val();
+          if (a.idade_max_info <= 4) {
+            console.log(a);
+          }
+        });*/
+    };
+    InformativosProvider.prototype.getAll = function () {
+        return this.db.list(this.PATH)
+            .snapshotChanges()
+            .map(function (changes) {
+            return changes.map(function (c) { return (__assign({ key: c.payload.key }, c.payload.val())); });
         });
     };
-    LembretesProvider = __decorate([
+    InformativosProvider = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["A" /* Injectable */])(),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_4_angularfire2_database__["a" /* AngularFireDatabase */],
             __WEBPACK_IMPORTED_MODULE_3_angularfire2__["b" /* FirebaseApp */],
             __WEBPACK_IMPORTED_MODULE_0__angular_common_http__["a" /* HttpClient */],
-            __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["i" /* ToastController */]])
-    ], LembretesProvider);
-    return LembretesProvider;
+            __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["j" /* ToastController */]])
+    ], InformativosProvider);
+    return InformativosProvider;
 }());
 
-//# sourceMappingURL=lembretes.js.map
+//# sourceMappingURL=informativo.js.map
 
 /***/ }),
 
-/***/ 603:
+/***/ 604:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TabDependenteAcompanhamentoPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(15);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_informativo_informativo__ = __webpack_require__(560);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+/**
+ * Generated class for the TabDependenteAcompanhamentoPage page.
+ *
+ * See https://ionicframework.com/docs/components/#navigation for more info on
+ * Ionic pages and navigation.
+ */
+var TabDependenteAcompanhamentoPage = /** @class */ (function () {
+    function TabDependenteAcompanhamentoPage(informativoProvider, navCtrl, navParams, params) {
+        this.informativoProvider = informativoProvider;
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+        this.data_nasc = params.data;
+        this.idade = this.getAge(this.data_nasc);
+        this.informativoProvider = informativoProvider;
+        this.informativos = this.informativoProvider.getInformativoPorIdade(this.idade);
+        //console.log( this.informativos );
+    }
+    TabDependenteAcompanhamentoPage.prototype.ionViewWillEnter = function () {
+        console.log(this.idade);
+        this.informativos = this.informativoProvider.getInformativoPorIdade(this.idade);
+        //this.informativos = this.informativoProvider.getInformativoPorIdade(this.idade);
+    };
+    TabDependenteAcompanhamentoPage.prototype.getAge = function (date) {
+        var newDate = new Date(date);
+        var now = new Date();
+        var age = now.getFullYear() - newDate.getFullYear();
+        return age;
+    };
+    ;
+    TabDependenteAcompanhamentoPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-tab-dependente-acompanhamento',template:/*ion-inline-start:"c:\mobile\projetoNanny\src\pages\tab-dependente-acompanhamento\tab-dependente-acompanhamento.html"*/'<!--\n  Generated template for the LembretesPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<br />\n<br />\n<ion-header>\n  <ion-navbar>\n    <ion-title>Lembretes</ion-title>\n  </ion-navbar>\n</ion-header>\n<ion-content padding>\n  <ion-list>\n    <ion-item *ngFor="let informativo of informativos | async">\n      <h1>{{ informativo.nome_info }}</h1>\n    </ion-item>\n  </ion-list>\n</ion-content>'/*ion-inline-end:"c:\mobile\projetoNanny\src\pages\tab-dependente-acompanhamento\tab-dependente-acompanhamento.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2__providers_informativo_informativo__["a" /* InformativosProvider */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */]])
+    ], TabDependenteAcompanhamentoPage);
+    return TabDependenteAcompanhamentoPage;
+}());
+
+//# sourceMappingURL=tab-dependente-acompanhamento.js.map
+
+/***/ }),
+
+/***/ 605:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TabDependenteLembretesPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(15);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_lembretes_lembretes__ = __webpack_require__(119);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__cadastro_lembretes_cadastro_lembretes__ = __webpack_require__(91);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+/**
+ * Generated class for the TabDependenteLembretesPage page.
+ *
+ * See https://ionicframework.com/docs/components/#navigation for more info on
+ * Ionic pages and navigation.
+ */
+var TabDependenteLembretesPage = /** @class */ (function () {
+    function TabDependenteLembretesPage(lembreteProvider, modalCtrl, navCtrl, navParams, toastCtrl, params, lembretesProvider) {
+        this.lembreteProvider = lembreteProvider;
+        this.modalCtrl = modalCtrl;
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+        this.toastCtrl = toastCtrl;
+        this.id_dependente = params.data;
+        this.lembretesProvider = lembretesProvider;
+        this.lembretes = lembretesProvider.getLembretePorDependente(params.data);
+    }
+    TabDependenteLembretesPage.prototype.ionViewWillEnter = function () {
+        console.log('ionViewDidLoad TabDependenteLembretesPage');
+        console.log(this.id_dependente);
+        this.lembretes = this.lembretesProvider.getLembretePorDependente(this.id_dependente);
+    };
+    TabDependenteLembretesPage.prototype.editarLembrete = function (lembrete) {
+        var profileModal = this.modalCtrl.create(__WEBPACK_IMPORTED_MODULE_3__cadastro_lembretes_cadastro_lembretes__["a" /* CadastroLembretesPage */], { lembrete: lembrete });
+        profileModal.present();
+        //this.navCtrl.push(CadastroLembretesPage, { lembrete: lembrete });
+    };
+    TabDependenteLembretesPage.prototype.removeLembrete = function (lembretes) {
+        this.lembreteProvider.remove(lembretes);
+    };
+    TabDependenteLembretesPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-tab-dependente-lembretes',template:/*ion-inline-start:"c:\mobile\projetoNanny\src\pages\tab-dependente-lembretes\tab-dependente-lembretes.html"*/'<!--\n  Generated template for the LembretesPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<br />\n<br />\n<ion-header>\n    <ion-navbar>\n      <ion-title>Lembretes</ion-title>\n    </ion-navbar>\n  </ion-header>\n  <ion-content padding>\n    <ion-list>\n      <ion-item-sliding *ngFor="let lembrete of lembretes | async">\n        <ion-item>\n          <h1>{{ lembrete.titulo }}</h1>\n        </ion-item>\n        <ion-item-options side="left">\n          <div *ngIf="lembrete.titulo != null">\n            <button ion-button color="secondary" (click)="editarLembrete(lembrete)">\n              <ion-icon name="create"></ion-icon>\n            </button>\n          </div>\n          <button ion-button color="danger" (click)="removeLembrete(lembrete)">\n            <ion-icon name="trash"></ion-icon>\n          </button>\n        </ion-item-options>\n      </ion-item-sliding>\n    </ion-list>\n  </ion-content>\n  '/*ion-inline-end:"c:\mobile\projetoNanny\src\pages\tab-dependente-lembretes\tab-dependente-lembretes.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2__providers_lembretes_lembretes__["a" /* LembretesProvider */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* ModalController */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* ToastController */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */],
+            __WEBPACK_IMPORTED_MODULE_2__providers_lembretes_lembretes__["a" /* LembretesProvider */]])
+    ], TabDependenteLembretesPage);
+    return TabDependenteLembretesPage;
+}());
+
+//# sourceMappingURL=tab-dependente-lembretes.js.map
+
+/***/ }),
+
+/***/ 606:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(604);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__(608);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(607);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__(611);
 
 
 Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* platformBrowserDynamic */])().bootstrapModule(__WEBPACK_IMPORTED_MODULE_1__app_module__["a" /* AppModule */]);
@@ -1464,44 +1583,50 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 
 /***/ }),
 
-/***/ 608:
+/***/ 611:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_http__ = __webpack_require__(94);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common_http__ = __webpack_require__(95);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_http__ = __webpack_require__(132);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common_http__ = __webpack_require__(60);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_platform_browser__ = __webpack_require__(51);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_ionic_angular__ = __webpack_require__(17);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ionic_native_splash_screen__ = __webpack_require__(599);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ionic_native_status_bar__ = __webpack_require__(602);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_ionic_angular__ = __webpack_require__(15);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ionic_native_splash_screen__ = __webpack_require__(600);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ionic_native_status_bar__ = __webpack_require__(603);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_angularfire2__ = __webpack_require__(39);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_angularfire2_database__ = __webpack_require__(54);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_angularfire2_auth__ = __webpack_require__(62);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__environments_environment__ = __webpack_require__(1008);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__app_component__ = __webpack_require__(1009);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pages_home_home__ = __webpack_require__(193);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__pages_login_login__ = __webpack_require__(220);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__pages_cadastro_cadastro__ = __webpack_require__(216);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__pages_perfil_usuario_perfil_usuario__ = __webpack_require__(221);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__pages_lembretes_lembretes__ = __webpack_require__(218);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__pages_cartao_cartao__ = __webpack_require__(217);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__pages_lista_dependentes_lista_dependentes__ = __webpack_require__(219);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__pages_cadastro_lembretes_cadastro_lembretes__ = __webpack_require__(127);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__pages_cadastro_dependente_dependente__ = __webpack_require__(126);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__providers_dependente_dependente__ = __webpack_require__(88);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__providers_usuario_usuario__ = __webpack_require__(119);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__providers_lembretes_lembretes__ = __webpack_require__(546);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__providers_cadastro_lembretes_cadastro_lembretes__ = __webpack_require__(1010);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__providers_auth_auth__ = __webpack_require__(186);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__providers_cartao_cartao__ = __webpack_require__(1011);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_angularfire2_auth__ = __webpack_require__(63);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__environments_environment__ = __webpack_require__(1011);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__app_component__ = __webpack_require__(1012);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pages_home_home__ = __webpack_require__(194);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__pages_login_login__ = __webpack_require__(221);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__pages_cadastro_cadastro__ = __webpack_require__(217);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__pages_perfil_usuario_perfil_usuario__ = __webpack_require__(222);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__pages_lembretes_lembretes__ = __webpack_require__(219);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__pages_lista_dependentes_lista_dependentes__ = __webpack_require__(220);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__pages_cadastro_lembretes_cadastro_lembretes__ = __webpack_require__(91);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__pages_cadastro_dependente_dependente__ = __webpack_require__(127);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__pages_help_help__ = __webpack_require__(218);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__providers_dependente_dependente__ = __webpack_require__(90);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__providers_usuario_usuario__ = __webpack_require__(120);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__providers_lembretes_lembretes__ = __webpack_require__(119);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__providers_cadastro_lembretes_cadastro_lembretes__ = __webpack_require__(1013);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__providers_auth_auth__ = __webpack_require__(187);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__pages_tab_dependente_lembretes_tab_dependente_lembretes__ = __webpack_require__(605);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_27__pages_tab_dependente_acompanhamento_tab_dependente_acompanhamento__ = __webpack_require__(604);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_28__providers_informativo_informativo__ = __webpack_require__(560);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_29__providers_help_help__ = __webpack_require__(1014);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
+
+
 
 
 
@@ -1540,11 +1665,13 @@ var AppModule = /** @class */ (function () {
                 __WEBPACK_IMPORTED_MODULE_13__pages_login_login__["a" /* LoginPage */],
                 __WEBPACK_IMPORTED_MODULE_14__pages_cadastro_cadastro__["a" /* CadastroPage */],
                 __WEBPACK_IMPORTED_MODULE_15__pages_perfil_usuario_perfil_usuario__["a" /* PerfilUsuarioPage */],
-                __WEBPACK_IMPORTED_MODULE_18__pages_lista_dependentes_lista_dependentes__["a" /* ListaDependentesPage */],
+                __WEBPACK_IMPORTED_MODULE_17__pages_lista_dependentes_lista_dependentes__["a" /* ListaDependentesPage */],
                 __WEBPACK_IMPORTED_MODULE_16__pages_lembretes_lembretes__["a" /* LembretesPage */],
-                __WEBPACK_IMPORTED_MODULE_19__pages_cadastro_lembretes_cadastro_lembretes__["a" /* CadastroLembretesPage */],
-                __WEBPACK_IMPORTED_MODULE_20__pages_cadastro_dependente_dependente__["a" /* DependentePage */],
-                __WEBPACK_IMPORTED_MODULE_17__pages_cartao_cartao__["a" /* CartaoPage */]
+                __WEBPACK_IMPORTED_MODULE_18__pages_cadastro_lembretes_cadastro_lembretes__["a" /* CadastroLembretesPage */],
+                __WEBPACK_IMPORTED_MODULE_19__pages_cadastro_dependente_dependente__["a" /* DependentePage */],
+                __WEBPACK_IMPORTED_MODULE_26__pages_tab_dependente_lembretes_tab_dependente_lembretes__["a" /* TabDependenteLembretesPage */],
+                __WEBPACK_IMPORTED_MODULE_27__pages_tab_dependente_acompanhamento_tab_dependente_acompanhamento__["a" /* TabDependenteAcompanhamentoPage */],
+                __WEBPACK_IMPORTED_MODULE_20__pages_help_help__["a" /* HelpPage */]
             ],
             imports: [
                 __WEBPACK_IMPORTED_MODULE_2__angular_platform_browser__["a" /* BrowserModule */],
@@ -1557,12 +1684,14 @@ var AppModule = /** @class */ (function () {
                         { loadChildren: '../pages/cadastro-dependente/dependente.module#DependentePageModule', name: 'DependentePage', segment: 'dependente', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/cadastro-lembretes/cadastro-lembretes.module#CadastroLembretesPageModule', name: 'CadastroLembretesPage', segment: 'cadastro-lembretes', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/cadastro/cadastro.module#CadastroPageModule', name: 'CadastroPage', segment: 'cadastro', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/cartao/cartao.module#CartaoPageModule', name: 'CartaoPage', segment: 'cartao', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/help/help.module#HelpPageModule', name: 'HelpPage', segment: 'help', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/lembretes/lembretes.module#LembretesPageModule', name: 'LembretesPage', segment: 'lembretes', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/lista-dependentes/lista-dependentes.module#ListaDependentesPageModule', name: 'ListaDependentesPage', segment: 'lista-dependentes', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/login/login.module#LoginPageModule', name: 'LoginPage', segment: 'login', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/pagina-dependente/pagina-dependente.module#PaginaDependentePageModule', name: 'PaginaDependentePage', segment: 'pagina-dependente', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/perfil-usuario/perfil-usuario.module#PerfilUsuarioPageModule', name: 'PerfilUsuarioPage', segment: 'perfil-usuario', priority: 'low', defaultHistory: [] }
+                        { loadChildren: '../pages/login/login.module#LoginPageModule', name: 'LoginPage', segment: 'login', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/perfil-usuario/perfil-usuario.module#PerfilUsuarioPageModule', name: 'PerfilUsuarioPage', segment: 'perfil-usuario', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/tab-dependente-acompanhamento/tab-dependente-acompanhamento.module#TabDependenteAcompanhamentoPageModule', name: 'TabDependenteAcompanhamentoPage', segment: 'tab-dependente-acompanhamento', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/tab-dependente-lembretes/tab-dependente-lembretes.module#TabDependenteLembretesPageModule', name: 'TabDependenteLembretesPage', segment: 'tab-dependente-lembretes', priority: 'low', defaultHistory: [] }
                     ]
                 }),
                 __WEBPACK_IMPORTED_MODULE_7_angularfire2__["a" /* AngularFireModule */].initializeApp(__WEBPACK_IMPORTED_MODULE_10__environments_environment__["a" /* environment */].firebase),
@@ -1576,11 +1705,13 @@ var AppModule = /** @class */ (function () {
                 __WEBPACK_IMPORTED_MODULE_13__pages_login_login__["a" /* LoginPage */],
                 __WEBPACK_IMPORTED_MODULE_14__pages_cadastro_cadastro__["a" /* CadastroPage */],
                 __WEBPACK_IMPORTED_MODULE_15__pages_perfil_usuario_perfil_usuario__["a" /* PerfilUsuarioPage */],
-                __WEBPACK_IMPORTED_MODULE_18__pages_lista_dependentes_lista_dependentes__["a" /* ListaDependentesPage */],
+                __WEBPACK_IMPORTED_MODULE_17__pages_lista_dependentes_lista_dependentes__["a" /* ListaDependentesPage */],
                 __WEBPACK_IMPORTED_MODULE_16__pages_lembretes_lembretes__["a" /* LembretesPage */],
-                __WEBPACK_IMPORTED_MODULE_19__pages_cadastro_lembretes_cadastro_lembretes__["a" /* CadastroLembretesPage */],
-                __WEBPACK_IMPORTED_MODULE_20__pages_cadastro_dependente_dependente__["a" /* DependentePage */],
-                __WEBPACK_IMPORTED_MODULE_17__pages_cartao_cartao__["a" /* CartaoPage */]
+                __WEBPACK_IMPORTED_MODULE_18__pages_cadastro_lembretes_cadastro_lembretes__["a" /* CadastroLembretesPage */],
+                __WEBPACK_IMPORTED_MODULE_19__pages_cadastro_dependente_dependente__["a" /* DependentePage */],
+                __WEBPACK_IMPORTED_MODULE_26__pages_tab_dependente_lembretes_tab_dependente_lembretes__["a" /* TabDependenteLembretesPage */],
+                __WEBPACK_IMPORTED_MODULE_27__pages_tab_dependente_acompanhamento_tab_dependente_acompanhamento__["a" /* TabDependenteAcompanhamentoPage */],
+                __WEBPACK_IMPORTED_MODULE_20__pages_help_help__["a" /* HelpPage */]
             ],
             providers: [
                 __WEBPACK_IMPORTED_MODULE_6__ionic_native_status_bar__["a" /* StatusBar */],
@@ -1591,7 +1722,8 @@ var AppModule = /** @class */ (function () {
                 __WEBPACK_IMPORTED_MODULE_23__providers_lembretes_lembretes__["a" /* LembretesProvider */],
                 __WEBPACK_IMPORTED_MODULE_25__providers_auth_auth__["a" /* AuthProvider */],
                 __WEBPACK_IMPORTED_MODULE_24__providers_cadastro_lembretes_cadastro_lembretes__["a" /* CadastroLembretesProvider */],
-                __WEBPACK_IMPORTED_MODULE_26__providers_cartao_cartao__["a" /* CartaoProvider */]
+                __WEBPACK_IMPORTED_MODULE_28__providers_informativo_informativo__["a" /* InformativosProvider */],
+                __WEBPACK_IMPORTED_MODULE_29__providers_help_help__["a" /* HelpProvider */]
             ]
         })
     ], AppModule);
@@ -1602,19 +1734,19 @@ var AppModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 88:
+/***/ 90:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DependenteProvider; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(94);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(132);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_angularfire2__ = __webpack_require__(39);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_angularfire2_database__ = __webpack_require__(54);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_firebase_app__ = __webpack_require__(111);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_firebase_app__ = __webpack_require__(83);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_firebase_app___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_firebase_app__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_ionic_angular__ = __webpack_require__(17);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_ionic_native__ = __webpack_require__(326);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_ionic_angular__ = __webpack_require__(15);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_ionic_native__ = __webpack_require__(327);
 var __assign = (this && this.__assign) || Object.assign || function(t) {
     for (var s, i = 1, n = arguments.length; i < n; i++) {
         s = arguments[i];
@@ -1759,14 +1891,77 @@ var DependenteProvider = /** @class */ (function () {
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_3_angularfire2_database__["a" /* AngularFireDatabase */],
             __WEBPACK_IMPORTED_MODULE_2_angularfire2__["b" /* FirebaseApp */],
             __WEBPACK_IMPORTED_MODULE_1__angular_http__["a" /* Http */],
-            __WEBPACK_IMPORTED_MODULE_5_ionic_angular__["i" /* ToastController */]])
+            __WEBPACK_IMPORTED_MODULE_5_ionic_angular__["j" /* ToastController */]])
     ], DependenteProvider);
     return DependenteProvider;
 }());
 
 //# sourceMappingURL=dependente.js.map
 
+/***/ }),
+
+/***/ 91:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CadastroLembretesPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(15);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_lembretes_lembretes__ = __webpack_require__(119);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_dependente_dependente__ = __webpack_require__(90);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+var CadastroLembretesPage = /** @class */ (function () {
+    function CadastroLembretesPage(toastCtrl, lembretesProvider, navCtrl, navParams, dependenteProvider) {
+        this.toastCtrl = toastCtrl;
+        this.lembretesProvider = lembretesProvider;
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+        this.dependenteProvider = dependenteProvider;
+        this.lembrete = {};
+        this.lembrete = navParams.get("lembrete") || {};
+        console.log(this.lembrete);
+        this.dependentes = dependenteProvider.getAll();
+        console.log(this.dependentes);
+    }
+    CadastroLembretesPage.prototype.save = function (lembretes) {
+        console.log('lembretes:' + lembretes);
+        var resposta = this.lembretesProvider.salvar(lembretes);
+        if (resposta)
+            this.navCtrl.popToRoot();
+    };
+    CadastroLembretesPage.prototype.edit = function (lembretes) {
+        console.log('lembretes:' + lembretes);
+        var resposta = this.lembretesProvider.editar(lembretes);
+        if (resposta)
+            this.navCtrl.popToRoot();
+    };
+    CadastroLembretesPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-cadastro-lembretes',template:/*ion-inline-start:"c:\mobile\projetoNanny\src\pages\cadastro-lembretes\cadastro-lembretes.html"*/'<ion-header>\n  <ion-navbar color="primary">\n    <ion-title >{{lembrete.key == null ? \'Cadastrar Lembrete\' : \'Editar Lembrete\' }}</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n  <ion-item>\n    <ion-label floating>Dependente</ion-label>\n    <ion-select [(ngModel)]="lembrete.id_dependente">\n          <ion-option *ngFor="let dependente of dependentes | async" value="{{dependente.key}}">{{dependente.nome}}</ion-option>\n    </ion-select>\n  </ion-item>\n  <ion-item>\n    <ion-label floating>Título</ion-label>\n    <ion-input type="text" [(ngModel)]="lembrete.titulo" required></ion-input>\n  </ion-item>\n  <ion-item>\n    <ion-label stacked>Data Início</ion-label>\n    <ion-input type="date" displayFormat="mm/dd/yyyy" pickerFormat="MMMM YYYY" [(ngModel)]="lembrete.data_inicial"></ion-input>\n  </ion-item>\n  <ion-item>\n    <ion-label stacked>Data Final</ion-label>\n    <ion-input type="date" [(ngModel)]="lembrete.data_final"></ion-input>\n  </ion-item>\n  <ion-item>\n    <ion-label floating>Repetir todo dia?</ion-label>\n    <ion-select [(ngModel)]="lembrete.repeticao"  >\n      <ion-option value="Sim">Sim</ion-option>\n      <ion-option value="Não">Não</ion-option>\n    </ion-select>\n  </ion-item>\n  <ion-item>\n    <ion-label floating>Categoria</ion-label>\n    <ion-input type="text" [(ngModel)]="lembrete.categoria"></ion-input>\n  </ion-item>\n  <ion-item>\n    <ion-label floating>Localização</ion-label>\n    <ion-input type="text" [(ngModel)]="lembrete.localizacao"></ion-input>\n  </ion-item>\n  <ion-item>\n    <ion-label floating>Anotações</ion-label>\n    <ion-input type="text" [(ngModel)]="lembrete.anotacoes"></ion-input>\n  </ion-item>\n  <button class="button button-positive button-block" type="submit" ng-disabled="contato.$invalid">Salvar</button>\n  <button ion-button (click)="lembrete.key == null ? save(lembrete) : edit(lembrete)">Gravar</button>\n  </ion-content>\n'/*ion-inline-end:"c:\mobile\projetoNanny\src\pages\cadastro-lembretes\cadastro-lembretes.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* ToastController */],
+            __WEBPACK_IMPORTED_MODULE_2__providers_lembretes_lembretes__["a" /* LembretesProvider */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */],
+            __WEBPACK_IMPORTED_MODULE_3__providers_dependente_dependente__["a" /* DependenteProvider */]])
+    ], CadastroLembretesPage);
+    return CadastroLembretesPage;
+}());
+
+//# sourceMappingURL=cadastro-lembretes.js.map
+
 /***/ })
 
-},[603]);
+},[606]);
 //# sourceMappingURL=main.js.map

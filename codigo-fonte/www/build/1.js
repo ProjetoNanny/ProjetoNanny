@@ -1,14 +1,14 @@
 webpackJsonp([1],{
 
-/***/ 1020:
+/***/ 1025:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PerfilUsuarioPageModule", function() { return PerfilUsuarioPageModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TabDependenteLembretesPageModule", function() { return TabDependenteLembretesPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(17);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__perfil_usuario__ = __webpack_require__(221);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(15);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__tab_dependente_lembretes__ = __webpack_require__(605);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -18,23 +18,23 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var PerfilUsuarioPageModule = /** @class */ (function () {
-    function PerfilUsuarioPageModule() {
+var TabDependenteLembretesPageModule = /** @class */ (function () {
+    function TabDependenteLembretesPageModule() {
     }
-    PerfilUsuarioPageModule = __decorate([
+    TabDependenteLembretesPageModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__perfil_usuario__["a" /* PerfilUsuarioPage */],
+                __WEBPACK_IMPORTED_MODULE_2__tab_dependente_lembretes__["a" /* TabDependenteLembretesPage */],
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__perfil_usuario__["a" /* PerfilUsuarioPage */]),
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__tab_dependente_lembretes__["a" /* TabDependenteLembretesPage */]),
             ],
         })
-    ], PerfilUsuarioPageModule);
-    return PerfilUsuarioPageModule;
+    ], TabDependenteLembretesPageModule);
+    return TabDependenteLembretesPageModule;
 }());
 
-//# sourceMappingURL=perfil-usuario.module.js.map
+//# sourceMappingURL=tab-dependente-lembretes.module.js.map
 
 /***/ })
 
