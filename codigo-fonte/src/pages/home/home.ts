@@ -10,12 +10,14 @@ import { AngularFireAuth } from 'angularfire2/auth';
 import { ListaDependentesPage } from '../lista-dependentes/lista-dependentes';
 import { Usuario } from '../../models/usuario';
 import * as firebase from 'firebase/app';
+
 @Component({
   selector: 'page-home',
   templateUrl: 'home.html'
 })
 export class HomePage {
   usuario = {} as  Usuario;
+
   constructor(
     public authService: AngularFireAuth,
     public navCtrl: NavController,
@@ -63,12 +65,15 @@ export class HomePage {
     console.log(this.usuario);
     this.navCtrl.push(PerfilUsuarioPage, {usuario: this.usuario});
   }
+
   async pushListaDependentes(){
     this.navCtrl.push(ListaDependentesPage);
   }
+
   async pushLembretes(){
     this.navCtrl.push(LembretesPage);
   }
+
   async pushCadastroLembretes(){
     this.navCtrl.push(CadastroLembretesPage);
   }

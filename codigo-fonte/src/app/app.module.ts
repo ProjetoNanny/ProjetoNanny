@@ -28,6 +28,7 @@ import { TabDependenteLembretesPage } from '../pages/tab-dependente-lembretes/ta
 import { TabDependenteAcompanhamentoPage } from '../pages/tab-dependente-acompanhamento/tab-dependente-acompanhamento';
 import { InformativosProvider } from '../providers/informativo/informativo';
 import { HelpProvider } from '../providers/help/help';
+import { AccordionComponent } from '../components/accordion/accordion';
 
 @NgModule({
   declarations: [
@@ -40,9 +41,16 @@ import { HelpProvider } from '../providers/help/help';
     LembretesPage,
     CadastroLembretesPage,
     DependentePage,
+<<<<<<< .mine
+    HelpPage,
+    AccordionComponent
+||||||| .r51
+    HelpPage
+=======
     TabDependenteLembretesPage,
     TabDependenteAcompanhamentoPage,
     HelpPage
+>>>>>>> .r53
   ],
   imports: [
     BrowserModule,
