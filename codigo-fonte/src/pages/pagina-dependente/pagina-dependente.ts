@@ -3,7 +3,7 @@ import { Dependente } from './../../models/dependente';
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { DependentePage } from '../../pages/cadastro-dependente/dependente';
-import { LembretePage } from '../../pages/lembretes/lembretes';
+import { LembretesPage } from '../../pages/lembretes/lembretes';
 import { CadastroLembretesPage } from '../../pages/cadastro-lembretes/cadastro-lembretes';
 import { DependenteProvider } from '../../providers/dependente/dependente';
 import { Observable } from 'rxjs/Observable';

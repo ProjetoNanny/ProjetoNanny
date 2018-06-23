@@ -41,16 +41,10 @@ import { AccordionComponent } from '../components/accordion/accordion';
     LembretesPage,
     CadastroLembretesPage,
     DependentePage,
-<<<<<<< .mine
     HelpPage,
-    AccordionComponent
-||||||| .r51
-    HelpPage
-=======
+    AccordionComponent,
     TabDependenteLembretesPage,
-    TabDependenteAcompanhamentoPage,
-    HelpPage
->>>>>>> .r53
+    TabDependenteAcompanhamentoPage
   ],
   imports: [
     BrowserModule,
