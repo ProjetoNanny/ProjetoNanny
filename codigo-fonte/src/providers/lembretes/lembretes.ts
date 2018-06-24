@@ -16,7 +16,7 @@ export class LembretesProvider {
     public firebaseApp: FirebaseApp,
     public http: HttpClient,
     public toastCtrl: ToastController
-    ) {}
+  ) {}
     salvar(lembretes: Lembretes){
       //lembretes.id_dependente = ;
       lembretes.id_usuario = firebase.auth().currentUser.uid;

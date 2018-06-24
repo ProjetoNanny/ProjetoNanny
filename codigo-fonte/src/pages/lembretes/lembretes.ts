@@ -22,7 +22,7 @@ export class LembretesPage {
     public toastCtrl: ToastController,
     params: NavParams,
     lembretesProvider: LembretesProvider
-  ) {   
+  ) {
         this.lembretes = lembretesProvider.getAll();
     }
 
