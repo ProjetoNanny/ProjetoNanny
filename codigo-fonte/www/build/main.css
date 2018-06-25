@@ -25726,6 +25726,16 @@ ion-navbar.toolbar {
   font-size: 30px;
 }
 
+accordion .card-header {
+  background-color: #488aff;
+  color: #fff;
+}
+
+accordion .card-content {
+  padding: 0px 16px;
+  max-height: 0px;
+}
+
 page-home .botao_sair {
   width: 25%;
 }
