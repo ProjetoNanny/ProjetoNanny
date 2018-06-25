@@ -5,6 +5,7 @@ import { Lembretes } from '../../models/lembretes';
 import { CadastroLembretesPage } from '../cadastro-lembretes/cadastro-lembretes';
 import { AngularFireDatabase } from 'angularfire2/database';
 import { Observable } from 'rxjs/Observable';
+import { DependenteProvider } from '../../providers/dependente/dependente';
 import firebase from 'firebase';
 import { LembretesProvider } from '../../providers/lembretes/lembretes';
 
@@ -16,14 +17,17 @@ import { LembretesProvider } from '../../providers/lembretes/lembretes';
 export class LembretesPage {
   private PATH = "lembretes/";
   lembretes: Observable<any>;
+  dependentes: Observable<any>;
   constructor(public navCtrl: NavController,
     public navParams: NavParams,
     private db: AngularFireDatabase,
     public toastCtrl: ToastController,
     params: NavParams,
-    lembretesProvider: LembretesProvider
+    lembretesProvider: LembretesProvider,
+    public dependenteProvider: DependenteProvider
   ) {
         this.lembretes = lembretesProvider.getAll();
+        this.dependentes=dependenteProvider.getAll();
     }
 
   getAll(){

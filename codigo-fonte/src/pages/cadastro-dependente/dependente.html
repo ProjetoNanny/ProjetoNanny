@@ -10,7 +10,7 @@
     <ion-input type="text" [(ngModel)]="dependente.nome" required></ion-input>
   </ion-item>
   <ion-item>
-    <ion-label floating>Data de Nascimento</ion-label>
+    <ion-label stacked>Data de Nascimento</ion-label>
     <ion-input type="date" [(ngModel)]="dependente.data_nasc"></ion-input>
   </ion-item>
   <ion-item>
@@ -35,7 +35,10 @@
   </ion-item>
   <ion-item>
     <ion-label floating>Gênero</ion-label>
-    <ion-input type="text" [(ngModel)]="dependente.genero"></ion-input>
+    <ion-select [(ngModel)]="dependente.genero">
+      <ion-option value="M">Masculino</ion-option>
+      <ion-option value="F">Feminino</ion-option>
+    </ion-select>
   </ion-item>
   <ion-item>
     <ion-label floating>Personalidade</ion-label>

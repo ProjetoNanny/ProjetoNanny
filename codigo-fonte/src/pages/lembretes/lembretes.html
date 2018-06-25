@@ -6,7 +6,7 @@
 -->
 <ion-header>
 
-  <ion-navbar>
+  <ion-navbar color="primary">
     <ion-title>Lembretes</ion-title>
   </ion-navbar>
 
@@ -16,7 +16,7 @@
   <ion-list>
     <ion-item-sliding *ngFor="let lembrete of lembretes | async">
       <ion-item>
-        <h1>{{ lembrete.titulo }}</h1>
+        <h1 >{{ lembrete.titulo }}</h1>
       </ion-item>
       <ion-item-options side="left">
         <div *ngIf="lembrete.titulo != null">

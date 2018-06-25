@@ -1,19 +1,24 @@
 <ion-header>
-  <ion-navbar>
-    <ion-item padding>
-      <ion-title>Dependentes</ion-title>
-      <ion-icon name="help" item-right class="botao_ajuda"></ion-icon>
-    </ion-item>
+  <ion-navbar color="primary">
+      <ion-title>Lista de Dependentes</ion-title>
   </ion-navbar>
 </ion-header>
+
 <ion-content padding>
   <ion-grid>
     <ion-row>
       <ion-col *ngFor="let dependente of dependentes | async" col-6>
         <ion-item (click)="selecionarDependente(dependente)" class="botao_circulo centralizado no-padding">
+
           <div *ngIf="dependente.foto_perfil == null">
-            <img src="https://ih1.redbubble.net/image.445781365.8284/flat,800x800,075,f.u2.jpg" />
+            <div *ngIf="dependente.genero == 'M'">
+              <img width="100px" height="100px" src="../assets/imgs/boy.png"/>
+            </div>
+            <div *ngIf="dependente.genero !== 'M'">
+              <img width="100px" height="100px" src="../assets/imgs/girl.png"/>
+            </div>
           </div>
+
           <div *ngIf="dependente.foto_perfil != null">
             <img src="{{dependente.foto_perfil}}" />
           </div>
@@ -23,9 +28,10 @@
       <ion-col col-6>
         <ion-item (click)="adicionarDependente(dependente)" class="botao_circulo centralizado no-padding">
           <div>
-            <ion-icon name="add" style="font-size:100px;"></ion-icon>
+            <ion-icon name="add" style="font-size:50px;"></ion-icon>
           </div>
         </ion-item>
+        <p class="centralizado no-padding">Novo Dependente</p>
       </ion-col>
     </ion-row>
   </ion-grid>
